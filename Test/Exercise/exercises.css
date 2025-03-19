@@ -1,0 +1,30 @@
+h1{
+    font-family: "Poiret One", sans-serif;
+    text-align: center;
+    font-size: 36px;
+    color: pink
+}
+p{
+    font-size: 18px;
+    color: blue;
+}
+ul {
+    list-style-type: square;
+    color: orange;
+}
+.navlinks{
+    list-style: none;
+    background-color: black;
+}
+.navlinks a{
+    color: white;
+    background-color: blue;
+    font-size: 16px;
+    font-weight: bold;
+    border: 5px red;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px;
+    display: inline-block;
+}
