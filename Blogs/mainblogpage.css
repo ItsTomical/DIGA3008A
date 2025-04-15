@@ -1,0 +1,106 @@
+.heading {
+    text-align: center;
+    margin: 20px auto;
+    font-family: Poppins, sans-serif;
+    font-size: 24px;
+    padding-top: 100px;
+  }
+  
+  .blog-index-subheading {
+    text-align: center;
+    margin: 20px auto;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    padding-top: 40px;
+  }
+  
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+    background-color: #E6DACE;
+    padding: 30px;
+    margin: 80px auto;
+    width: 50%;
+    border-radius: 15px;
+    gap: 40px;
+  }
+  
+  .blog-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    max-width: 250px;
+  }
+  
+  .blog-label {
+    font-weight: bold;
+    color: #3C415B;
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+  }
+  
+  .blog-title {
+    font-weight: bold;
+    color: #3C415B;
+    font-size: 22px;
+    font-family: Poppins, sans-serif;
+    text-decoration: none;
+  }
+  
+  .date {
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+    font-family: Tinos, sans-serif;
+  }
+  
+  .blog-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .description {
+    font-family: Tinos, sans-serif;
+    font-size: 18px;
+    color: black;
+    line-height: 1.5;
+  }
+  
+  .description-container {
+    display: flex;
+    justify-content: center; /* Centers the button */
+    margin-top: 20px; /* Space between description and button */
+  }
+  
+  .read-more {
+    align-self: center;
+    border: 2px solid #B75B47;
+    padding: 6px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    transition: background-color 0.3s;
+  }
+  
+  .read-more:hover {
+    background-color: #B75B47;
+    color: white;
+    transform: translateY(-3px);
+  }
+
+  .read-more:focus {
+    outline: none;                /* Removes the default focus outline */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Adds a soft glow around the button when focused */
+  }
+  
+  .read-more:active {
+    transform: translateY(1px);  /* Button slightly "presses" when clicked */
+  }
+  

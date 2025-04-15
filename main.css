@@ -1,23 +1,61 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #3c415b;
+  background: linear-gradient(160deg, #3c415b, #000000);
   background-size: cover;
   font-family: "Tinos", serif;
   color: #ffffff;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
 nav {
-  background-color: #b2c7b6;
-  height: 80px;
+  background: linear-gradient(
+    135deg,
+    #b2c7b6,
+    #8da69b
+  ); /* Gradient background */
+  padding: 15px;
+  height: 4.25em; /* Adjust height as needed */
   width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease-in-out;
+}
+
+nav:hover {
+  background: linear-gradient(
+    135deg,
+    #8da69b,
+    #b2c7b6
+  ); /* Hover effect for subtle change */
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
 }
 
 .page-header {
-  color: #ffffff;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
   font-size: 25px;
   font-weight: bold;
-  line-height: 80px;
-  margin: 20px 50px;
-  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+#logo {
+  width: 50px;
+  margin-left: 10px; /* smaller spacing between name and logo */
 }
 
 nav ul {
@@ -40,11 +78,6 @@ nav ul li a {
   text-decoration: none;
   padding: 5px 15px;
   border-radius: 20px;
-}
-
-#logo {
-  width: 50px;
-  margin: 0 0 -20px -40px;
 }
 
 h1 {
