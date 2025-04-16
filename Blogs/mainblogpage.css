@@ -25,17 +25,18 @@
   border-radius: 15px;
   gap: 40px;
   box-shadow: 0 0 15px rgba(141, 166, 155, 0.6);
+  overflow: hidden;
+  position: relative;
 }
-
+  
 .blog-top-image {
-  width: 100%;
-  height: auto;
-  max-height: 200px;
-  object-fit: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  margin-bottom: 15px;
-}
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 15px;
+} 
 
 .blog-body {
   display: flex;
