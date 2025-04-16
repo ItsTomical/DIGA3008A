@@ -113,12 +113,14 @@ ul {
     color: white;
     text-decoration: none;
     font-family: Poppins, sans-serif;
-    border-radius: 25px;
+    border-radius: 8px;
     font-size: 1rem;
     transition: background-color 0.3s ease;
     box-shadow: 0 4px 8px rgba(141, 166, 155, 0.6);
-  }
+    max-width: fit-content;
+    margin: 2rem 0 0 2rem; 
+}
   
-  .back-to-blogs:hover {
+.back-to-blogs:hover {
     background-color: #B75B47;
   }

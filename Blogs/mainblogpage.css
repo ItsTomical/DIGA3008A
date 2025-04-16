@@ -51,8 +51,8 @@
   justify-content: center;
   gap: 15px;
   max-width: 250px;
-  border-right: 3px solid #b75b47; /* Adds the vertical line */
-  padding-right: 20px; /* Adds spacing from the border */
+  border-right: 3px solid #b75b47; /* vertical line */
+  padding-right: 20px; /* Spacing from the border */
 }
 
 .blog-label {
@@ -95,7 +95,7 @@
 
 .description-container {
   display: flex;
-  justify-content: center; /* Centers the button */
+  justify-content: center;
   margin-top: 20px; /* Space between description and button */
 }
 
@@ -117,8 +117,8 @@
 }
 
 .read-more:focus {
-  outline: none; /* Removes the default focus outline */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Adds a soft glow around the button when focused */
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .read-more:active {

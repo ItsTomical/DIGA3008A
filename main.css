@@ -1,42 +1,49 @@
+/* Global Styling */
 html {
   scroll-behavior: smooth;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(160deg, #3c415b, #000000);
   background-size: cover;
   font-family: "Tinos", serif;
   color: #ffffff;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
+/* Layout Structure */
+main {
+  flex: 1; /* Allows main content to fill available vertical space */
+}
+
+/* Header & Navigation Bar */
 header {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 1; /* Keeps header above other content */
 }
 
 nav {
-  background: linear-gradient(
-    135deg,
-    #b2c7b6,
-    #8da69b
-  ); /* Gradient background */
+  background: linear-gradient(135deg, #b2c7b6, #8da69b);
   padding: 15px;
   height: 4.25em;
-  width: 100%;
+  width: 100vw;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: background 0.3s ease-in-out;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw; /* Ensures nav spans full width */
 }
 
 nav:hover {
-  background: linear-gradient(
-    135deg,
-    #8da69b,
-    #b2c7b6
-  ); /* Hover effect for subtle change */
+  background: linear-gradient(135deg, #8da69b, #b2c7b6);
 }
 
 .brand {
@@ -55,9 +62,10 @@ nav:hover {
 
 #logo {
   width: 50px;
-  margin-left: 10px; /* spacing between name and logo */
+  margin-left: 10px; /* Spacing between brand text and logo */
 }
 
+/* Navigation Links & Burger Menu */
 nav ul {
   float: right;
   margin-right: 40px;
@@ -80,13 +88,6 @@ nav ul li a {
   border-radius: 20px;
 }
 
-h1 {
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-  font-size: 3em;
-  color: #ffffff;
-}
-
 .burger-button {
   font-size: 30px;
   color: #000000;
@@ -101,6 +102,22 @@ h1 {
   display: none;
 }
 
+/* Footer */
+footer {
+  background-color: #b2c7b6;
+  color: #000000;
+  padding: 40px 20px;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 14px;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+  z-index: 1;
+}
+
+/* Responsive Design */
 @media (max-width: 800px) {
   .burger-button {
     display: block;
