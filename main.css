@@ -22,7 +22,7 @@ nav {
     #8da69b
   ); /* Gradient background */
   padding: 15px;
-  height: 4.25em; /* Adjust height as needed */
+  height: 4.25em;
   width: 100%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   display: flex;
@@ -55,7 +55,7 @@ nav:hover {
 
 #logo {
   width: 50px;
-  margin-left: 10px; /* smaller spacing between name and logo */
+  margin-left: 10px; /* spacing between name and logo */
 }
 
 nav ul {

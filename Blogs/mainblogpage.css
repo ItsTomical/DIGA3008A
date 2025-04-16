@@ -1,106 +1,125 @@
 .heading {
-    text-align: center;
-    margin: 20px auto;
-    font-family: Poppins, sans-serif;
-    font-size: 24px;
-    padding-top: 100px;
-  }
-  
-  .blog-index-subheading {
-    text-align: center;
-    margin: 20px auto;
-    font-family: Poppins, sans-serif;
-    font-size: 16px;
-    padding-top: 40px;
-  }
-  
+  text-align: center;
+  margin: 20px auto;
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  padding-top: 70px;
+}
+
+.blog-index-subheading {
+  text-align: center;
+  margin: 20px auto;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  padding-top: 40px;
+}
 
 .blog-content {
-    display: flex;
-    justify-content: space-between;
-    background-color: #E6DACE;
-    padding: 30px;
-    margin: 80px auto;
-    width: 50%;
-    border-radius: 15px;
-    gap: 40px;
-  }
-  
-  .blog-left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
-    max-width: 250px;
-  }
-  
-  .blog-label {
-    font-weight: bold;
-    color: #3C415B;
-    font-size: 20px;
-    font-family: Poppins, sans-serif;
-  }
-  
-  .blog-title {
-    font-weight: bold;
-    color: #3C415B;
-    font-size: 22px;
-    font-family: Poppins, sans-serif;
-    text-decoration: none;
-  }
-  
-  .date {
-    font-weight: bold;
-    color: black;
-    font-size: 14px;
-    font-family: Tinos, sans-serif;
-  }
-  
-  .blog-right {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .description {
-    font-family: Tinos, sans-serif;
-    font-size: 18px;
-    color: black;
-    line-height: 1.5;
-  }
-  
-  .description-container {
-    display: flex;
-    justify-content: center; /* Centers the button */
-    margin-top: 20px; /* Space between description and button */
-  }
-  
-  .read-more {
-    align-self: center;
-    border: 2px solid #B75B47;
-    padding: 6px 18px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 14px;
-    color: black;
-    transition: background-color 0.3s;
-  }
-  
-  .read-more:hover {
-    background-color: #B75B47;
-    color: white;
-    transform: translateY(-3px);
-  }
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  background-color: #e6dace;
+  padding: 30px;
+  margin: 80px auto;
+  width: 50%;
+  border-radius: 15px;
+  gap: 40px;
+  box-shadow: 0 0 15px rgba(141, 166, 155, 0.6);
+}
 
-  .read-more:focus {
-    outline: none;                /* Removes the default focus outline */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Adds a soft glow around the button when focused */
-  }
-  
-  .read-more:active {
-    transform: translateY(1px);  /* Button slightly "presses" when clicked */
-  }
-  
+.blog-top-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.blog-body {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.blog-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  max-width: 250px;
+  border-right: 3px solid #b75b47; /* Adds the vertical line */
+  padding-right: 20px; /* Adds spacing from the border */
+}
+
+.blog-label {
+  font-weight: bold;
+  color: #3c415b;
+  font-size: 20px;
+  font-family: Poppins, sans-serif;
+}
+
+.blog-title {
+  font-weight: bold;
+  color: #3c415b;
+  font-size: 22px;
+  font-family: Poppins, sans-serif;
+  text-decoration: none;
+}
+
+.date {
+  font-weight: bold;
+  color: black;
+  font-size: 14px;
+  font-family: Tinos, sans-serif;
+}
+
+.blog-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.description {
+  font-family: Tinos, sans-serif;
+  font-size: 18px;
+  color: black;
+  line-height: 1.5;
+}
+
+.description-container {
+  display: flex;
+  justify-content: center; /* Centers the button */
+  margin-top: 20px; /* Space between description and button */
+}
+
+.read-more {
+  align-self: center;
+  border: 2px solid #b75b47;
+  padding: 6px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  transition: background-color 0.3s;
+}
+
+.read-more:hover {
+  background-color: #b75b47;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.read-more:focus {
+  outline: none; /* Removes the default focus outline */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Adds a soft glow around the button when focused */
+}
+
+.read-more:active {
+  transform: translateY(1px); /* Button slightly "presses" when clicked */
+}

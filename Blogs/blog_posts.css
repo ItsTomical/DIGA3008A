@@ -1,0 +1,124 @@
+/* Blog Summary Card */
+.blog-summary-card {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #e6dace;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(141, 166, 155, 0.6);
+}
+
+.summary-card-content {
+  text-align: center;
+}
+
+.blog-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #3c415b;
+  margin-bottom: 0.5rem;
+  font-family: Poppins, sans-serif;
+}
+
+.blog-date {
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.blog-description {
+  font-size: 1.1rem;
+  color: black;
+  line-height: 1.6;
+  font-family: Tinos, sans-serif;
+}
+
+/* Blog Article Card */
+.blog-article-card {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #e6dace;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  font-family: Tinos, sans-serif;
+}
+
+.blog-article-card h2 {
+  margin-top: 1.5rem;
+  color: #3c415b;
+  font-family: Poppins, sans-serif;
+  font-size: 1.4rem;
+}
+
+.blog-article-card p,
+.blog-article-card ol {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: black;
+  margin-bottom: 1rem;
+  font-family: Tinos, sans-serif;
+}
+
+/* References (Cite) Style */
+.cite {
+  font-size: 1rem;
+  color: #3c415b;
+  font-style: Tinos, sans-serif;
+  line-height: 1.5;
+}
+
+.cite a {
+  color: #b75b47; /* Change the color of the links in the references */
+  text-decoration: underline; /* Optional: makes links underlined */
+  transition: color 0.3s ease;
+}
+
+.cite a:hover {
+  color: #222; /* Change to a darker color on hover */
+}
+
+/* List Style */
+ul {
+  list-style-type: square;
+  color: #b75b47; /* This changes the color of the bullet itself */
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 40px; /* Distance from the bottom of the screen */
+  right: 40px; /* Distance from the right of the screen */
+  background-color: #b75b47;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: Poppins, sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  z-index: 1000; /* Makes sure it appears above other content */
+}
+
+.back-to-top:hover {
+  background-color: #8e3d2f;
+}
+
+/* Back to Blogs Button */
+.back-to-blogs {
+    display: inline-block;
+    margin: 2rem 0 0 2rem;
+    padding: 0.5rem 1rem;
+    background-color: #3C415B;
+    color: white;
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(141, 166, 155, 0.6);
+  }
+  
+  .back-to-blogs:hover {
+    background-color: #B75B47;
+  }
