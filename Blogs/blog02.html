@@ -4,92 +4,152 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blogs</title>
+    <link rel="stylesheet" href="../normalize.css" />
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../Blogs/blog_posts.css" />
+    <script
+      src="https://kit.fontawesome.com/dddfa338de.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../Blogs/mainblogpage.html">Blogs</a></li>
-        <li><a href="../Essays/mainessaypage.html">Essays</a></li>
-        <li><a href="../Portfolio/mainportfoliopage.html">Portfolio</a></li>
-        <li><a href="../Design/maindesignpage.html">Design</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="burger-button"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
 
-    <div class="breadcrumbs">
-      <a href="/index.html">Home</a> >
-      <a href="../Blogs/mainblogpage.html">Blogs</a> > Blog 2
-    </div>
+        <div class="brand">
+          <label class="page-header">Thomas Yardley</label>
+          <img src="../Images/Logo name.png" id="logo" alt="Logo" />
+        </div>
 
-    <h1>Blog Post 2</h1>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../Blogs/mainblogpage.html">Blogs</a></li>
+          <li><a href="../Essays/mainessaypage.html">Essays</a></li>
+          <li><a href="../Portfolio/mainportfoliopage.html">Portfolio</a></li>
+          <li><a href="../Design/maindesignpage.html">Design</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <time datetime="2025-02-24">24 February 2025</time>
+    <a href="../Blogs/mainblogpage.html" class="back-to-blogs"
+      >← Back to Blogs</a
+    >
+
+    <h1 class="heading">Blog 2</h1>
 
     <main>
-      <article>
-        <h2>How does it speak to the internet today?</h2>
+      <section class="blog-summary-card">
+        <div class="summary-card-content">
+          <h2 class="blog-title">
+            Hypertext, Power, and the Internet We Have Today
+          </h2>
+          <p class="blog-date">
+            <time datetime="2025-02-24">24 February 2025</time>
+          </p>
+          <p class="blog-description">
+            A reflection on Moulthrop’s and Nelson’s visions of a free, open
+            internet — and how today’s web, shaped by algorithms, corporations,
+            and governments, challenges the dream of true digital literacy and
+            user control.
+          </p>
+        </div>
+      </section>
+      <article class="blog-article-card">
+        <section>
+          <h2>Moulthrop’s vision and the web we have today</h2>
+          <p>
+            Moulthrop (1993) suggests that hypertext wouldn’t replace books, but
+            would change how we engage with media. This is true today – while
+            books continue to exist, the internet involves much more
+            interactivity than mere reading. Moulthrop (1993) reflects on
+            Nelson’s vision of hypertext, and his system called Xanadu. Nelson
+            saw hypertext as a “return of literacy” (Moulthrop, 1993, p.695), a
+            way for people to explore ideas beyond books and create information
+            instead of just reading it.
+          </p>
+          <p>
+            He believed literacy was only for the elite, limiting access to
+            knowledge. His vision for Xanadu was of a network that allowed users
+            to “manipulate and alter the textual corpus” (Moulthrop, 1993,
+            p.692); where they could control the information themselves rather
+            than leaving it to companies or governments to decide what gets
+            shared.
+          </p>
+        </section>
 
-        <p>
-          Moulthrop (1993) suggests that hypertext wouldn’t replace books, but
-          would change how we engage with media. This is true today – while
-          books continue to exist, the internet involves much more interactivity
-          than mere reading. Moulthrop (1993) reflects on Nelson’s vision of
-          hypertext, and his system called Xanadu. Nelson saw hypertext as a
-          “return of literacy” (Moulthrop, 1993, p.695), a way for people to
-          explore ideas beyond books and create information instead of just
-          reading it. He believed literacy was only for the elite, limiting
-          access to knowledge. His vision for Xanadu was of a network that
-          allowed users to “manipulate and alter the textual corpus” (Moulthrop,
-          1993, p.692); where they could control the information themselves
-          rather than leaving it to companies or governments to decide what gets
-          shared.
-        </p>
+        <section>
+          <h2>Corporate and political control</h2>
+          <p>
+            Moulthrop (1993) warns that hypertext could still be taken over by
+            gatekeeping forces. This is exactly what we see today, with the web
+            largely controlled by a few big tech companies. Most people use
+            platforms like Facebook, X or Google to get their news, but what
+            they find is information shaped by algorithms that determine what
+            they see.
+          </p>
+          <p>
+            Also, think of the political control in China, where citizens’
+            access is restricted by the Great Firewall, which blocks sites like
+            Google, Wikipedia and many more.
+          </p>
+        </section>
 
-        <p>
-          But Moulthrop (1993) warns that hypertext could still be taken over by
-          gatekeeping forces. This is exactly what we see today, with the web
-          largely controlled by a few big tech companies. Most people use
-          platforms like Facebook, X or Google to get their news, but what they
-          find is information shaped by algorithms that determine what they see.
-          Also, think of the political control in China, where citizens’ access
-          is restricted by the Great Firewall, which blocks sites like Google,
-          Wikipedia and many more.
-        </p>
+        <section>
+          <h2>Is the web really participatory?</h2>
+          <p>
+            Instead of the open web that Nelson imagined, companies and
+            governments today control what information we see online. While the
+            internet lets us create videos, share opinions, and post blogs (like
+            this one), participation is still limited and controlled. Social
+            media companies decide what content gets seen and what gets ignored.
+          </p>
+          <p>
+            Even though people create content, businesses and governments still
+            control what is shared and what is hidden to suit their interests.
+          </p>
+        </section>
 
-        <p>
-          So, instead of the open web that Nelson imagined, companies and
-          governments today control what information we see online. While the
-          internet lets us create videos, share opinions, and post blogs (like
-          this one), participation is still limited and controlled. Social media
-          companies decide what content gets seen and what gets ignored. Even
-          though people create content, businesses and governments still control
-          what is shared and what is hidden to suit their interests.
-        </p>
+        <section>
+          <h2>Secondary literacy and the missing layer of understanding</h2>
+          <p>
+            Moulthrop (1993) also talks about “secondary literacy”, where people
+            don’t just use hypertext, but actually understand how it works.
+            Nelson saw hypertext as a way to get more people involved with
+            information so that they could think more critically.
+          </p>
+          <p>
+            This is not the case today. It is true that the internet has made it
+            easier to create and share content, but not everyone knows how it
+            works. Most of us just consume content and don’t have the power to
+            shape it or control what we see. So, we end up following what
+            companies decide we should see.
+          </p>
+        </section>
 
-        <p>
-          Moulthrop (1993) also talks about “secondary literacy”, where people
-          don’t just use hypertext, but actually understand how it works. Nelson
-          saw hypertext as a way to get more people involved with information so
-          that they could think more critically. He imagined that everyone would
-          have a basic understanding of it. This is not the case today. It is
-          true that the internet has made it easier to create and share content,
-          but not everyone knows how it works. Most of us just consume content
-          and don’t have the power to shape it or control what we see. So, we
-          end up following what companies decide we should see.
-        </p>
-
-        <p>
-          In conclusion, Moulthrop’s (1993) idea of a hypertext revolution
-          hasn’t fully come to life. While the internet has made communication
-          more interactive, its potential is held back by corporate and
-          political control influence, algorithms, and unequal access to digital
-          skills. Nelson’s dream of Xanadu as a free and open system for sharing
-          information hasn’t come true. So we have to ask the question, can the
-          internet still become the knowledge-sharing place Nelson had hoped
-          for, or has it become just another tool for those in power?
-        </p>
+        <section>
+          <h2>Conclusion</h2>
+          <p>
+            Moulthrop’s (1993) idea of a hypertext revolution hasn’t fully come
+            to life. While the internet has made communication more interactive,
+            its potential is held back by corporate and political control,
+            algorithms, and unequal access to digital skills. Nelson’s dream of
+            Xanadu as a free and open system for sharing information hasn’t come
+            true.
+          </p>
+          <p>
+            So we have to ask the question, can the internet still become the
+            knowledge-sharing place Nelson had hoped for, or has it become just
+            another tool for those in power?
+          </p>
+        </section>
       </article>
     </main>
+    <a href="#" class="back-to-top">Back to Top</a>
+
     <footer>
       <div class="footer-content">
         © 2025 Thomas Yardley | All rights reserved

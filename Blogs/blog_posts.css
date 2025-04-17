@@ -1,6 +1,10 @@
-h1 {
+.heading {
     text-align: center;
-}
+    margin: 20px auto;
+    font-family: Poppins, sans-serif;
+    font-size: 36px;
+    padding-top: 70px;
+  }
 
 /* Blog Summary Card */
 .blog-summary-card {
@@ -55,6 +59,20 @@ h1 {
   font-size: 1.4rem;
 }
 
+.blog-article-card h3 {
+    margin-top: 1.5rem;
+    color: #3c415b;
+    font-family: Poppins, sans-serif;
+    font-size: 1.4rem;
+}
+
+.blog-article-card h4 {
+    margin-top: 1.5rem;
+    color: #3c415b;
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+}
+
 .blog-article-card p,
 .blog-article-card ol {
   font-size: 1.1rem;
@@ -62,6 +80,16 @@ h1 {
   color: black;
   margin-bottom: 1rem;
   font-family: Tinos, sans-serif;
+}
+
+.blog-article-card img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 12px; /* optional: gives rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* optional: adds subtle shadow */
 }
 
 /* References (Cite) Style */
@@ -127,4 +155,5 @@ ul {
   
 .back-to-blogs:hover {
     background-color: #B75B47;
-  }
+}
+  

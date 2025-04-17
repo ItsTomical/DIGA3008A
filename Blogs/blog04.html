@@ -4,29 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blogs</title>
+    <link rel="stylesheet" href="../normalize.css" />
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../Blogs/blog_posts.css" />
+    <script
+      src="https://kit.fontawesome.com/dddfa338de.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../Blogs/mainblogpage.html">Blogs</a></li>
-        <li><a href="../Essays/mainessaypage.html">Essays</a></li>
-        <li><a href="../Portfolio/mainportfoliopage.html">Portfolio</a></li>
-        <li><a href="../Design/maindesignpage.html">Design</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="burger-button"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
 
-    <div class="breadcrumbs">
-      <a href="/index.html">Home</a> >
-      <a href="../Blogs/mainblogpage.html">Blogs</a> > Blog 4
-    </div>
+        <div class="brand">
+          <label class="page-header">Thomas Yardley</label>
+          <img src="../Images/Logo name.png" id="logo" alt="Logo" />
+        </div>
 
-    <h1>Blog 4</h1>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../Blogs/mainblogpage.html">Blogs</a></li>
+          <li><a href="../Essays/mainessaypage.html">Essays</a></li>
+          <li><a href="../Portfolio/mainportfoliopage.html">Portfolio</a></li>
+          <li><a href="../Design/maindesignpage.html">Design</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <time datetime="2025-03-10">10 March 2025</time>
+    <a href="../Blogs/mainblogpage.html" class="back-to-blogs"
+      >← Back to Blogs</a
+    >
+
+    <h1 class="heading">Blog 4</h1>
 
     <main>
-      <article>
+      <section class="blog-summary-card">
+        <div class="summary-card-content">
+          <h2 class="blog-title">
+            Designing with Purpose: Aligning Goals, Users, and Interface
+            Elements
+          </h2>
+          <p class="blog-date">
+            <time datetime="2025-03-10">10 March 2025</time>
+          </p>
+          <p class="blog-description">
+            In this post, I outline the goals of my personal website, explore
+            different user types and their needs, and explain how interface
+            elements, information structure, and visual design choices support a
+            smooth and engaging user experience.
+          </p>
+        </div>
+      </section>
+
+      <article class="blog-article-card">
         <section>
           <h2>Goal Alignment</h2>
 
@@ -128,8 +162,6 @@
             <img
               src="../Images/information_structure.png"
               alt="Mindmap of my website information strucutre"
-              width="500"
-              height="500"
             />
           </figure>
         </section>
@@ -138,12 +170,7 @@
           <h3>User Flow</h3>
 
           <figure>
-            <img
-              src="../Images/user_flow.png"
-              alt="Flowchart of user flow"
-              width="1000"
-              height="1000"
-            />
+            <img src="../Images/user_flow.png" alt="Flowchart of user flow" />
           </figure>
         </section>
 
@@ -202,45 +229,25 @@
           <h4>HomePage</h4>
 
           <figure>
-            <img
-              src="../Images/Home Page_Wireframe.png"
-              alt=""
-              width="1000"
-              height="3000"
-            />
+            <img src="../Images/Home Page_Wireframe.png" alt="" />
           </figure>
 
           <h4>Blogs & Essay Page</h4>
 
           <figure>
-            <img
-              src="../Images/Blogs & Essays Page_Wireframe.png"
-              alt=""
-              width="1700"
-              height="1000"
-            />
+            <img src="../Images/Blogs & Essays Page_Wireframe.png" alt="" />
           </figure>
 
           <h4>Portfolio Page</h4>
 
           <figure>
-            <img
-              src="../Images/Portfolio Page_Wireframe.png"
-              alt=""
-              width="1300"
-              height="1300"
-            />
+            <img src="../Images/Portfolio Page_Wireframe.png" alt="" />
           </figure>
 
           <h4>Design Process Page</h4>
 
           <figure>
-            <img
-              src="../Images/Design Process Page_Wireframe.png"
-              alt=""
-              width="1300"
-              height="1500"
-            />
+            <img src="../Images/Design Process Page_Wireframe.png" alt="" />
           </figure>
         </section>
 
@@ -294,12 +301,15 @@
             and pushing a change, it takes a long time to appear on the website.
             I didn’t realise this and so I went back to edit the code because I
             thought something was wrong. However, I actually didn’t need to do
-            this; I just needed to wait a bit longer. <br />
+            this; I just needed to wait a bit longer.
+          </p>
+          <p>
             Additionally, I have struggled with image placement, and will need
             to work on this. I need to get my website to a point where I am
             happy with the HTML and semantic markup before we start CSS and Java
             Script.
-            <br />
+          </p>
+          <p>
             I am happy with and proud of the file structure on my site. I feel
             that all it needs is a bit of refinement as I progress through the
             development of the site.
@@ -307,7 +317,8 @@
         </section>
       </article>
     </main>
-    <a href="#">Back to Top</a>
+    <a href="#" class="back-to-top">Back to Top</a>
+
     <footer>
       <div class="footer-content">
         © 2025 Thomas Yardley | All rights reserved
