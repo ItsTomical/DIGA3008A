@@ -1,158 +1,178 @@
 /* Base / Global Styles */
 body {
-  font-family: Poppins, sans-serif;
-  margin: 0;
-  padding: 0 20px;
-  background-color: #fff;
-}
-
-/* Page Heading */
-.page-heading h1 {
-  text-align: center;
-  margin-top: 100px;
-  font-size: 36px;
-  color: #ffffff;
-}
-
-/* Layout: Section Wrappers */
-
-/* About Section */
-.about-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-  margin: 100px auto;
-  flex-wrap: wrap;
-}
-
-/* Blog Section */
-.blog-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 40px;
-  margin: 100px auto;
-  max-width: 1200px;
-}
-
-/* Components */
-
-/* About Card */
-.about-card {
-  max-width: 700px;
-  padding: 2rem;
-  background-color: #e6dace;
-  border-radius: 16px;
-  box-shadow: 0 6px 16px rgba(141, 166, 155, 0.6);
-  text-align: center;
-}
-
-.card-text h2 {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #3c415b;
-  margin-bottom: 0.5rem;
-}
-
-.card-text p {
-  font-size: 1.1rem;
-  color: black;
-  line-height: 1.6;
-  font-family: Tinos, serif;
-}
-
-/* Profile */
-.floating-profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.profile-image {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #3c415b;
-  background-color: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  transform: translate(10px, -110px) scale(1.1);
-}
-
-.profile-name {
-  font-size: 25px;
-  font-weight: bold;
-  color: #ffffff;
-  margin-top: -40px;
-}
-
-/* Blog Cards */
-.number-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 250px;
-  height: 250px;
-  background-color: #e6dace;
-  color: #b75b47;
-  font-weight: bold;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.number-card .number {
-  font-size: 100px;
-}
-
-.number-card .blog-text {
-  font-size: 50px;
-  font-family: Poppins, sans-serif;
-}
-
-.blog-content.two-column-card {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  background-color: #e6dace;
-  padding: 40px;
-  width: 90%;
-  border-radius: 16px;
-  box-shadow: 0 6px 16px rgba(141, 166, 155, 0.6);
-  flex-wrap: wrap;
-}
-
-.individual-blog {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  border-right: 3px solid #b75b47;
-  padding-right: 20px;
-}
-
-.individual-blog:last-child {
-  border-right: none;
-}
-
-.blog-top-image {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 15px;
-}
-
-.blog-body {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-/* Typography Elements */
-
-.blog-label {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0 20px;
+    background-color: #fff;
+  }
+  
+  /* Page Heading */
+  .page-heading h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 36px;
+    color: #ffffff;
+  }
+  
+  /* Layout: Section Wrappers */
+  
+  /* About Section */
+  .about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin: 100px auto;
+    flex-wrap: wrap;
+  }
+  
+  /* Post Section (was blog-container) */
+  .post-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    margin: 100px auto;
+    max-width: 1200px;
+  }
+  
+  /* Components */
+  
+  /* About Card */
+  .about-card {
+    max-width: 700px;
+    padding: 2rem;
+    background-color: #e6dace;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(141, 166, 155, 0.6);
+    text-align: center;
+  }
+  
+  .card-text h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #3c415b;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-text p {
+    font-size: 1.1rem;
+    color: black;
+    line-height: 1.6;
+    font-family: Tinos, serif;
+  }
+  
+  /* Profile */
+  .floating-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3c415b;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transform: translate(10px, -110px) scale(1.1);
+  }
+  
+  .profile-name {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: -40px;
+  }
+  
+  /* Post Cards (formerly number-card) */
+  .number-card-link {
+    text-decoration: none;
+  }
+  
+  .number-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    background-color: #e6dace;
+    color: #b75b47;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .number-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 24px rgba(178, 199, 182, 0.4);
+    background-color: #d4c2b4;
+  }
+  
+  .number-card:hover .number,
+  .number-card:hover .post-text {
+    color: #3c415b;
+  }
+  
+  .number-card .number {
+    font-size: 100px;
+  }
+  
+  .number-card .post-text {
+    font-size: 50px;
+    font-family: Poppins, sans-serif;
+  }
+  
+  /* Post Content: Two-Column Card */
+  .post-content.two-column-card {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    background-color: #e6dace;
+    padding: 40px;
+    width: 90%;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(141, 166, 155, 0.6);
+    flex-wrap: wrap;
+  }
+  
+  /* Individual Post */
+  .individual-post {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-right: 3px solid #b75b47;
+    padding-right: 20px;
+  }
+  
+  .individual-post:last-child {
+    border-right: none;
+  }
+  
+  /* Post Top Image */
+  .post-top-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .post-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Typography Elements */
+  
+  .post-label {
     margin: 0;
     color: #b75b47;
     font-weight: bold;
@@ -160,78 +180,79 @@ body {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 10px;
-}
+  }
   
-.blog-title {
+  .post-title {
     margin: 0;
     color: #3c415b;
     font-size: 1.4rem;
     font-weight: 600;
     text-align: center;
-}
+  }
   
-.date {
+  .date {
     margin: 0;
     color: #999;
     font-size: 0.9rem;
     font-style: italic;
     text-align: center;
-}
+  }
   
-.description {
+  .description {
     margin: 0;
     color: #333;
     font-size: 1rem;
     line-height: 1.6;
     text-align: center;
-}
-
-/* Buttons and Links */
-
-.read-more {
-  align-self: center;
-  margin-top: 10px;
-  border: 2px solid #b75b47;
-  padding: 6px 16px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 14px;
-  color: black;
-  transition: all 0.3s;
-}
-
-.read-more:hover {
-  background-color: #b75b47;
-  color: white;
-  transform: translateY(-2px);
-}
-
-/* Responsive Styles */
-
-@media screen and (max-width: 768px) {
-  .about-section {
-    flex-direction: column;
-    gap: 40px;
   }
-
-  .about-card {
-    width: 90%;
+  
+  /* Buttons and Links */
+  
+  .read-more {
+    align-self: center;
+    margin-top: 10px;
+    border: 2px solid #b75b47;
+    padding: 6px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    transition: all 0.3s;
   }
-
-  .profile-image {
-    width: 140px;
-    height: 140px;
+  
+  .read-more:hover {
+    background-color: #b75b47;
+    color: white;
+    transform: translateY(-2px);
   }
-
-  .profile-name {
-    font-size: 18px;
+  
+  /* Responsive Styles */
+  
+  @media screen and (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+      gap: 40px;
+    }
+  
+    .about-card {
+      width: 90%;
+    }
+  
+    .profile-image {
+      width: 140px;
+      height: 140px;
+    }
+  
+    .profile-name {
+      font-size: 18px;
+    }
+  
+    .post-content.two-column-card {
+      flex-direction: column;
+    }
+  
+    .number-card {
+      margin-bottom: 20px;
+    }
   }
-
-  .blog-content.two-column-card {
-    flex-direction: column;
-  }
-
-  .number-card {
-    margin-bottom: 20px;
-  }
-}
+  

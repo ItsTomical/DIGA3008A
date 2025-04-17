@@ -1,3 +1,7 @@
+h1 {
+    text-align: center;
+}
+
 /* Blog Summary Card */
 .blog-summary-card {
   max-width: 800px;
