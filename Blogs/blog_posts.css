@@ -88,8 +88,8 @@
     height: auto;
     display: block;
     margin: 1rem auto;
-    border-radius: 12px; /* optional: gives rounded corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* optional: adds subtle shadow */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* References (Cite) Style */
@@ -101,26 +101,26 @@
 }
 
 .cite a {
-  color: #b75b47; /* Change the color of the links in the references */
-  text-decoration: underline; /* Optional: makes links underlined */
+  color: #b75b47;
+  text-decoration: underline;
   transition: color 0.3s ease;
 }
 
 .cite a:hover {
-  color: #222; /* Change to a darker color on hover */
+  color: #222;
 }
 
 /* List Style */
 ul {
   list-style-type: square;
-  color: #b75b47; /* This changes the color of the bullet itself */
+  color: #b75b47;
 }
 
 /* Back to Top Button */
 .back-to-top {
   position: fixed;
-  bottom: 40px; /* Distance from the bottom of the screen */
-  right: 40px; /* Distance from the right of the screen */
+  bottom: 40px;
+  right: 40px;
   background-color: #b75b47;
   color: white;
   padding: 10px 15px;
@@ -129,7 +129,7 @@ ul {
   font-family: Poppins, sans-serif;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
-  z-index: 1000; /* Makes sure it appears above other content */
+  z-index: 1000;
 }
 
 .back-to-top:hover {

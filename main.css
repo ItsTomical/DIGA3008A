@@ -28,7 +28,7 @@ main {
 header {
   position: sticky;
   top: 0;
-  z-index: 1; /* Keeps header above other content */
+  z-index: 1;
 }
 
 nav {

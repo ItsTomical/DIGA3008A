@@ -1,7 +1,7 @@
 body {
     font-family: 'Tinos', sans-serif;
-    background-color: #FFFFFF; /* Background color set to white */
-    color: #000000; /* Default text color */
+    background-color: #FFFFFF;
+    color: #000000;
     margin: 0;
     padding: 0;
   }
@@ -11,7 +11,7 @@ body {
     font-size: 36px;
     margin-top: 50px;
     font-family: 'Poppins', sans-serif;
-    color: #ffffff; /* Delft Blue */
+    color: #ffffff;
   }
   
   h2 {
@@ -19,39 +19,39 @@ body {
     font-size: 20px;
     margin: 20px auto;
     font-family: 'Poppins', sans-serif;
-    color: #ffffff; /* Delft Blue */
+    color: #ffffff;
     padding-bottom: 30px;
   }
   
   h3 {
     font-size: 24px;
     font-family: 'Poppins', sans-serif;
-    color: #3C415B; /* Delft Blue */
+    color: #3C415B;
     margin-top: 40px;
   }
   
   h4 {
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
-    color: #3C415B; /* Delft Blue */
+    color: #3C415B;
     margin-top: 20px;
   }
   
   h5, h6 {
     font-family: 'Poppins', sans-serif;
-    color: #3C415B; /* Delft Blue */
+    color: #3C415B;
   }
   
   p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #000000; /* Black text */
+    color: #000000;
     margin-bottom: 1.5rem;
   }
   
   ul {
     list-style-type: square;
-    color: #B75B47; /* Jasper */
+    color: #B75B47;
     margin-left: 20px;
   }
   
@@ -60,7 +60,7 @@ body {
     max-width: 800px;
     margin: 2rem auto;
     padding: 2rem;
-    background-color: #E6DACE; /* Almond */
+    background-color: #E6DACE;
     border-radius: 16px;
     box-shadow: 0 6px 16px rgba(141, 166, 155, 0.6);
 }
@@ -82,20 +82,20 @@ figure {
   
   /* Links */
   a {
-    color: #B75B47; /* Jasper */
+    color: #B75B47;
     text-decoration: underline;
     transition: color 0.3s ease;
   }
   
   a:hover {
-    color: #222222; /* Darker color on hover */
+    color: #222222; 
 }
   
 /* Back to Top Button */
 .back-to-top {
     position: fixed;
-    bottom: 40px; /* Distance from the bottom of the screen */
-    right: 40px; /* Distance from the right of the screen */
+    bottom: 40px;
+    right: 40px;
     background-color: #b75b47;
     color: white;
     padding: 10px 15px;
@@ -104,7 +104,7 @@ figure {
     font-family: Poppins, sans-serif;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
-    z-index: 1000; /* Makes sure it appears above other content */
+    z-index: 1000;
   }
   
   .back-to-top:hover {
