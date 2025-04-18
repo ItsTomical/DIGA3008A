@@ -6,6 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="../normalize.css" />
     <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../Portfolio/mainportfoliopage.css" />
     <script
       src="https://kit.fontawesome.com/dddfa338de.js"
       crossorigin="anonymous"
@@ -15,32 +16,53 @@
     <header>
       <nav>
         <input type="checkbox" id="check" />
-        <label for="check" class="burger-button"
-          ><i class="fa-solid fa-bars"></i
-        ></label>
+        <label for="check" class="burger-button">
+          <i class="fa-solid fa-bars"></i>
+        </label>
 
-        <label for="page-header" class="page-header">Thomas Yardley</label>
-        <img src="../Images/Logo name.png" id="logo" />
+        <div class="brand h-card">
+          <label class="page-header p-name">Thomas Yardley</label>
+          <img
+            src="../Images/Logo name.png"
+            id="logo"
+            alt="Thomas Yardley's logo image"
+            class="u-logo"
+          />
+        </div>
 
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="../Blogs/mainblogpage.html">Blogs</a></li>
           <li><a href="../Essays/mainessaypage.html">Essays</a></li>
-          <li>Portfolio</li>
-          <li><a href="../Design/maindesignpage.html">Design</a></li>
+          <li><a href="../Portfolio/mainportfoliopage.html">Portfolio</a></li>
+          <li class="active">
+            <a class="u-url" href="../Design/maindesignpage.html">Design</a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h1>Portfolio</h1>
-      <h2>
+      <h1 class="heading">Portfolio</h1>
+      <h2 class="index-subheading">
         Welcome to my creative playground! Dive into my world of digital art, 3D
         renders, animations and traditional artworks. Ready to explore?
       </h2>
 
-      <p>Content coming soon.</p>
+      <section class="portfolio-section">
+        <h2 class="title">Photo Gallery</h2>
+        <div class="container">
+          <div class="image-container">
+            <img src="../Images/artwork01.png" alt="" />
+            <img src="../Images/artwork02.png" alt="" />
+            <img src="../Images/artwork03.png" alt="" />
+            <img src="../Images/artwork04.png" alt="" />
+            <img src="../Images/artwork05.png" alt="" />
+          </div>
+        </div>
+      </section>
     </main>
+
     <footer>
       <div class="footer-content">
         © 2025 Thomas Yardley | All rights reserved
