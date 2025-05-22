@@ -128,13 +128,17 @@ ul {
   text-decoration: none;
   font-family: Poppins, sans-serif;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
-  z-index: 1000;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  opacity: 0;           /* initially hidden */
+  pointer-events: none; /* prevent clicking when hidden */
+  z-index: 999;
 }
 
-.back-to-top:hover {
-  background-color: #8e3d2f;
+.back-to-top.show {
+  opacity: 1;
+  pointer-events: auto;
 }
+
 
 /* Back to Blogs Button */
 .back-to-blogs {

@@ -1,0 +1,44 @@
+/* LIGHTBOX STYLES */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+#caption {
+  margin: 20px auto;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-family: Poppins, sans-serif;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 45px;
+  color: #B75B47;
+  font-size: 60px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close:hover {
+  color: #bbb;
+}

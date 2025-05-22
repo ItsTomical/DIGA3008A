@@ -15,8 +15,6 @@ body {
 }
 
 /* Layout: Section Wrappers */
-
-/* About Section */
 .about-section {
   display: flex;
   justify-content: center;
@@ -26,8 +24,8 @@ body {
   flex-wrap: wrap;
 }
 
-/* Blog Section */
-.blog-container {
+/* Generic Content Section */
+.content-section {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -37,8 +35,6 @@ body {
 }
 
 /* Components */
-
-/* About Card */
 .about-card {
   max-width: 700px;
   padding: 2rem;
@@ -88,7 +84,7 @@ body {
   margin-top: -70px;
 }
 
-/* Blog Cards */
+/* Content Cards */
 .number-card-link {
   text-decoration: none;
 }
@@ -116,7 +112,7 @@ body {
 }
 
 .number-card:hover .number,
-.number-card:hover .blog-text {
+.number-card:hover .section-text {
   color: #3c415b;
 }
 
@@ -124,12 +120,12 @@ body {
   font-size: 100px;
 }
 
-.number-card .blog-text {
+.number-card .section-text {
   font-size: 50px;
   font-family: Poppins, sans-serif;
 }
 
-.blog-content.two-column-card {
+.content-grid {
   display: flex;
   flex-direction: row;
   gap: 40px;
@@ -141,7 +137,7 @@ body {
   flex-wrap: wrap;
 }
 
-.individual-blog {
+.content-card {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -149,11 +145,11 @@ body {
   padding-right: 20px;
 }
 
-.individual-blog:last-child {
+.content-card:last-child {
   border-right: none;
 }
 
-.blog-top-image {
+.content-image {
   width: 100%;
   height: 180px;
   object-fit: cover;
@@ -161,15 +157,14 @@ body {
   margin-bottom: 15px;
 }
 
-.blog-body {
+.content-body {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
 /* Typography Elements */
-
-.blog-label {
+.content-label {
   margin: 0;
   color: #b75b47;
   font-weight: bold;
@@ -179,7 +174,7 @@ body {
   margin-bottom: 10px;
 }
 
-.blog-title {
+.content-title {
   margin: 0;
   color: #3c415b;
   font-size: 1.4rem;
@@ -204,7 +199,6 @@ body {
 }
 
 /* Buttons and Links */
-
 .read-more {
   align-self: center;
   margin-top: 10px;
@@ -223,8 +217,63 @@ body {
   transform: translateY(-2px);
 }
 
-/* Responsive Styles */
+/* Contact section labels (left column) */
+.contact-labels {
+  flex: 1;
+  border-right: 3px solid #b75b47;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  font-weight: bold;
+  color: #b75b47;
+  font-size: 1.2rem;
+}
 
+/* Contact info (right column) */
+.contact-info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+  padding-left: 20px;
+  font-size: 1.2rem;
+  color: #3c415b;
+}
+
+.contact-info p {
+  margin: 0;
+}
+
+.contact-info a {
+  color: #3c415b;
+  text-decoration: none;
+  border-bottom: 1px dotted #b75b47;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: #b75b47;
+  border-bottom: 1px solid #b75b47;
+}
+
+/* Make sure contact section stacks on smaller screens */
+@media screen and (max-width: 768px) {
+  .content-grid {
+    flex-direction: column;
+  }
+  .contact-labels,
+  .contact-info {
+    border-right: none;
+    padding: 0;
+    gap: 10px;
+  }
+}
+
+
+/* Responsive Styles */
 @media screen and (max-width: 768px) {
   .about-section {
     flex-direction: column;
@@ -244,11 +293,17 @@ body {
     font-size: 18px;
   }
 
-  .blog-content.two-column-card {
+  .content-grid {
     flex-direction: column;
   }
 
   .number-card {
     margin-bottom: 20px;
   }
+}
+
+.content-section {
+  min-height: 90vh;
+  padding-top: 50px; 
+  box-sizing: border-box;
 }

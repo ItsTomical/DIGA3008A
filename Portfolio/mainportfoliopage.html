@@ -9,38 +9,47 @@
     <link rel="stylesheet" href="../normalize.css" />
     <link rel="stylesheet" href="../main.css" />
     <link rel="stylesheet" href="../Portfolio/mainportfoliopage.css" />
+    <link rel="stylesheet" href="../css/lightbox.css" />
     <script
       src="https://kit.fontawesome.com/dddfa338de.js"
       crossorigin="anonymous"
     ></script>
+    <script src="../javascript/lightbox.js"></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <input type="checkbox" id="check" />
-        <label for="check" class="burger-button">
-          <i class="fa-solid fa-bars"></i>
-        </label>
+    <header id="navbar">
+      <div class="brand h-card">
+        <img
+          src="../Images/Logo name.png"
+          id="logo"
+          alt="Thomas Yardley's logo image"
+          class="logo"
+        />
+        <label class="page-header p-name">Thomas Yardley</label>
+      </div>
 
-        <div class="brand h-card">
-          <label class="page-header p-name">Thomas Yardley</label>
-          <img
-            src="../Images/Logo name.png"
-            id="logo"
-            alt="Thomas Yardley's logo image"
-          />
-        </div>
+      <div class="nav-container">
+        <nav>
+          <input type="checkbox" id="check" />
+          <label for="check" class="burger-button">
+            <i class="fa-solid fa-bars"></i>
+          </label>
 
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../Blogs/mainblogpage.html">Blogs</a></li>
-          <li><a href="../Essays/mainessaypage.html">Essays</a></li>
-          <li><a href="../Portfolio/mainportfoliopage.html">Portfolio</a></li>
-          <li class="active">
-            <a class="u-url" href="../Design/maindesignpage.html">Design</a>
-          </li>
-        </ul>
-      </nav>
+          <ul class="nav_links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Blogs/mainblogpage.html">Blogs</a></li>
+            <li><a href="../Essays/mainessaypage.html">Essays</a></li>
+            <li><a href="../Portfolio/mainportfoliopage.html">Portfolio</a></li>
+            <li><a href="../Design/maindesignpage.html">Design</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="contact-container">
+        <a class="cta" href="../index.html#contact-section"
+          ><button>Contact</button></a
+        >
+      </div>
     </header>
 
     <main>
@@ -57,18 +66,22 @@
             <img
               src="../Images/artwork01.png"
               alt="An ink drawing showing the side-back view of a man covered in tattoos"
+              class="lightbox-target"
             />
             <img
               src="../Images/artwork02.png"
               alt="Nature versus nurture: A multimedia image where a hand controls a figure who merges into a gene-type tree"
+              class="lightbox-target"
             />
             <img
               src="../Images/artwork03.png"
               alt="A digitally drawn image of a robot floating above a platform in space"
+              class="lightbox-target"
             />
             <img
               src="../Images/artwork04.png"
               alt="An ink image of a woman scratching the back of her head"
+              class="lightbox-target"
             />
             <!-- <img src="../Images/artwork05.png" alt="" /> -->
           </div>
@@ -81,5 +94,11 @@
         © 2025 Thomas Yardley | All rights reserved
       </div>
     </footer>
+
+    <div id="lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-content" id="lightbox-img" />
+      <div id="caption"></div>
+    </div>
   </body>
 </html>

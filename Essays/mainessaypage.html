@@ -16,32 +16,39 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <input type="checkbox" id="check" />
-        <label for="check" class="burger-button"
-          ><i class="fa-solid fa-bars"></i
-        ></label>
+    <header id="navbar">
+      <div class="brand h-card">
+        <img
+          src="../Images/Logo name.png"
+          id="logo"
+          alt="Thomas Yardley's logo image"
+          class="logo"
+        />
+        <label class="page-header p-name">Thomas Yardley</label>
+      </div>
 
-        <div class="brand">
-          <label class="page-header">Thomas Yardley</label>
-          <img
-            src="../Images/Logo name.png"
-            id="logo"
-            alt="Thomas Yardley's logo image"
-          />
-        </div>
+      <div class="nav-container">
+        <nav>
+          <input type="checkbox" id="check" />
+          <label for="check" class="burger-button">
+            <i class="fa-solid fa-bars"></i>
+          </label>
 
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../Blogs/mainblogpage.html">Blogs</a></li>
-          <li class="active">
-            <a href="../Essays/mainessaypage.html">Essays</a>
-          </li>
-          <li><a href="../Portfolio/mainportfoliopage.html">Portfolio</a></li>
-          <li><a href="../Design/maindesignpage.html">Design</a></li>
-        </ul>
-      </nav>
+          <ul class="nav_links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Blogs/mainblogpage.html">Blogs</a></li>
+            <li><a href="../Essays/mainessaypage.html">Essays</a></li>
+            <li><a href="../Portfolio/mainportfoliopage.html">Portfolio</a></li>
+            <li><a href="../Design/maindesignpage.html">Design</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="contact-container">
+        <a class="cta" href="../index.html#contact-section"
+          ><button>Contact</button></a
+        >
+      </div>
     </header>
 
     <main>

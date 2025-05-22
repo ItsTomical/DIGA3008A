@@ -16,40 +16,50 @@
       src="https://kit.fontawesome.com/dddfa338de.js"
       crossorigin="anonymous"
     ></script>
+    <script src="homepage.js"></script>
   </head>
 
   <body class="h-feed">
-    <header>
-      <nav>
-        <input type="checkbox" id="check" />
-        <label for="check" class="burger-button">
-          <i class="fa-solid fa-bars"></i>
-        </label>
+    <header id="navbar">
+      <div class="brand h-card">
+        <img
+          src="Images/Logo name.png"
+          id="logo"
+          alt="Thomas Yardley's logo image"
+          class="logo"
+        />
+        <label class="page-header p-name">Thomas Yardley</label>
+      </div>
 
-        <div class="brand h-card">
-          <label class="page-header p-name">Thomas Yardley</label>
-          <img
-            src="Images/Logo name.png"
-            id="logo"
-            alt="Thomas Yardley's logo image"
-          />
-        </div>
+      <div class="nav-container">
+        <nav>
+          <input type="checkbox" id="check" />
+          <label for="check" class="burger-button">
+            <i class="fa-solid fa-bars"></i>
+          </label>
 
-        <ul>
-          <li class="active"><a class="u-url" href="./index.html">Home</a></li>
-          <li><a href="./Blogs/mainblogpage.html">Blogs</a></li>
-          <li><a href="./Essays/mainessaypage.html">Essays</a></li>
-          <li><a href="./Portfolio/mainportfoliopage.html">Portfolio</a></li>
-          <li><a href="./Design/maindesignpage.html">Design</a></li>
-        </ul>
-      </nav>
+          <ul class="nav_links">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#blogs-section">Blogs</a></li>
+            <li><a href="#essays-section">Essays</a></li>
+            <li><a href="#portfolio-section">Portfolio</a></li>
+            <li><a href="#design-section">Design</a></li>
+            <li><a href="#top">About</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="contact-container">
+        <a class="cta" href="#contact-section"><button>Contact</button></a>
+      </div>
     </header>
 
     <main>
-      <div class="page-heading">
-        <h1 class="p-name">Thomas's Website</h1>
-      </div>
-
+      <section id="top">
+        <div class="page-heading">
+          <h1 class="p-name">Thomas's Website</h1>
+        </div>
+      </section>
       <section class="about-section h-card">
         <div class="about-card">
           <div class="card-text">
@@ -72,145 +82,207 @@
           <p class="profile-name p-name">Thomas Yardley</p>
         </div>
       </section>
+      <section id="blogs-section">
+        <section class="content-section">
+          <a href="./Blogs/mainblogpage.html" class="number-card-link">
+            <div class="number-card">
+              <span class="number">1</span>
+              <span class="section-text">Blogs</span>
+            </div>
+          </a>
 
-      <section class="blog-container">
-        <a href="./Blogs/mainblogpage.html" class="number-card-link">
-          <div class="number-card">
-            <span class="number">1</span>
-            <span class="blog-text">Blogs</span>
+          <div class="content-grid">
+            <article class="content-card h-entry">
+              <h2 class="content-label">Blog 1</h2>
+              <img
+                class="content-image u-photo"
+                src="./Images/genric_card_background_image.png"
+                alt="Blog 1 image"
+              />
+              <div class="content-body">
+                <h3 class="content-title p-name">
+                  Exploring the Web: From Memex to My First GitHub Page
+                </h3>
+                <p class="date">
+                  <time class="dt-published" datetime="2025-02-17"
+                    >17 February 2025</time
+                  >
+                </p>
+                <p class="description p-summary">
+                  A personal reflection on learning to publish a website with
+                  GitHub Pages, exploring the early visions of the internet by
+                  Vannevar Bush, and tracing the web’s transformation from
+                  text-heavy systems to the dynamic platform we know today.
+                </p>
+                <a class="read-more" href="./Blogs/blog01.html">Read More</a>
+              </div>
+            </article>
+
+            <article class="content-card h-entry">
+              <h2 class="content-label">Blog 2</h2>
+              <img
+                class="content-image u-photo"
+                src="./Images/genric_card_background_image.png"
+                alt="Blog 2 image"
+              />
+              <div class="content-body">
+                <h3 class="content-title p-name">
+                  Hypertext, Power, and the Internet We Have Today
+                </h3>
+                <p class="date">
+                  <time class="dt-published" datetime="2025-02-24"
+                    >24 February 2025</time
+                  >
+                </p>
+                <p class="description p-summary">
+                  A reflection on Moulthrop’s and Nelson’s visions of a free,
+                  open internet — and how today’s web, shaped by algorithms,
+                  corporations, and governments, challenges the dream of true
+                  digital literacy and user control.
+                </p>
+                <a class="read-more" href="./Blogs/blog02.html">Read More</a>
+              </div>
+            </article>
           </div>
-        </a>
-
-        <div class="blog-content two-column-card">
-          <!-- Blog 1 -->
-          <article class="individual-blog h-entry">
-            <h2 class="blog-label">Blog 1</h2>
-            <img
-              class="blog-top-image u-photo"
-              src="./Images/genric_card_background_image.png"
-              alt="Blog 1 image"
-            />
-            <div class="blog-body">
-              <h3 class="blog-title p-name">
-                Exploring the Web: From Memex to My First GitHub Page
-              </h3>
-              <p class="date">
-                <time class="dt-published" datetime="2025-02-17"
-                  >17 February 2025</time
-                >
-              </p>
-              <p class="description p-summary">
-                A personal reflection on learning to publish a website with
-                GitHub Pages, exploring the early visions of the internet by
-                Vannevar Bush, and tracing the web’s transformation from
-                text-heavy systems to the dynamic platform we know today.
-              </p>
-              <a class="read-more" href="./Blogs/blog01.html">Read More</a>
-              <span class="p-author h-card" style="display: none">
-                <span class="p-name">Thomas Yardley</span>
-              </span>
-            </div>
-          </article>
-
-          <!-- Blog 2 -->
-          <article class="individual-blog h-entry">
-            <h2 class="blog-label">Blog 2</h2>
-            <img
-              class="blog-top-image u-photo"
-              src="./Images/genric_card_background_image.png"
-              alt="Blog 2 image"
-            />
-            <div class="blog-body">
-              <h3 class="blog-title p-name">
-                Hypertext, Power, and the Internet We Have Today
-              </h3>
-              <p class="date">
-                <time class="dt-published" datetime="2025-02-24"
-                  >24 February 2025</time
-                >
-              </p>
-              <p class="description p-summary">
-                A reflection on Moulthrop’s and Nelson’s visions of a free, open
-                internet — and how today’s web, shaped by algorithms,
-                corporations, and governments, challenges the dream of true
-                digital literacy and user control.
-              </p>
-              <a class="read-more" href="./Blogs/blog02.html">Read More</a>
-              <span class="p-author h-card" style="display: none">
-                <span class="p-name">Thomas Yardley</span>
-              </span>
-            </div>
-          </article>
-        </div>
+        </section>
       </section>
 
-      <section class="blog-container essay-section">
-        <div class="blog-content two-column-card">
-          <!-- Essay 1 -->
-          <article class="individual-blog h-entry">
-            <h2 class="blog-label">Essay 1</h2>
-            <img
-              class="blog-top-image u-photo"
-              src="./Images/genric_card_background_image.png"
-              alt="Essay 1 image"
-            />
-            <div class="blog-body">
-              <h3 class="blog-title p-name">Essay Heading</h3>
-              <p class="date">
-                <time class="dt-published" datetime="2025-04-01"
-                  >01 April 2025</time
-                >
-              </p>
-              <p class="description p-summary">
-                This is the essay description, and the read more button below
-                will let you explore the actual content (like in blogs).
-              </p>
-              <a class="read-more">Read More</a>
-              <!-- <a class="read-more" href="./essay01.html">Read More</a> -->
-              <!-- Temporarily commented out the href to prevent broken links / 404 errors while essay01.html is still under development -->
+      <section id="essays-section">
+        <section class="content-section">
+          <div class="content-grid">
+            <article class="content-card h-entry">
+              <h2 class="content-label">Essay 1</h2>
+              <img
+                class="content-image u-photo"
+                src="./Images/genric_card_background_image.png"
+                alt="Essay 1 image"
+              />
+              <div class="content-body">
+                <h3 class="content-title p-name">Essay Heading</h3>
+                <p class="date">
+                  <time class="dt-published" datetime="2025-04-01"
+                    >01 April 2025</time
+                  >
+                </p>
+                <p class="description p-summary">
+                  This is the essay description, and the read more button will
+                  explore the full content.
+                </p>
+                <a class="read-more">Read More</a>
+              </div>
+            </article>
 
-              <span class="p-author h-card" style="display: none">
-                <span class="p-name">Thomas Yardley</span>
-              </span>
-            </div>
-          </article>
-
-          <!-- Essay 2 -->
-          <article class="individual-blog h-entry">
-            <h2 class="blog-label">Essay 2</h2>
-            <img
-              class="blog-top-image u-photo"
-              src="./Images/genric_card_background_image.png"
-              alt="Essay 2 image"
-            />
-            <div class="blog-body">
-              <h3 class="blog-title p-name">Essay Heading</h3>
-              <p class="date">
-                <time class="dt-published" datetime="2025-04-01"
-                  >01 April 2025</time
-                >
-              </p>
-              <p class="description p-summary">
-                This is the essay description, and the read more button below
-                will let you explore the actual content (like in blogs).
-              </p>
-              <a class="read-more">Read More</a>
-              <!-- <a class="read-more" href="essay02.html">Read More</a> -->
-              <!-- Temporarily commented out the href to prevent broken links / 404 errors while essay02.html is still under development -->
-
-              <span class="p-author h-card" style="display: none">
-                <span class="p-name">Thomas Yardley</span>
-              </span>
-            </div>
-          </article>
-        </div>
-
-        <a href="./Essays/mainessaypage.html" class="number-card-link">
-          <div class="number-card">
-            <span class="number">2</span>
-            <span class="blog-text">Essays</span>
+            <article class="content-card h-entry">
+              <h2 class="content-label">Essay 2</h2>
+              <img
+                class="content-image u-photo"
+                src="./Images/genric_card_background_image.png"
+                alt="Essay 2 image"
+              />
+              <div class="content-body">
+                <h3 class="content-title p-name">Essay Heading</h3>
+                <p class="date">
+                  <time class="dt-published" datetime="2025-04-01"
+                    >01 April 2025</time
+                  >
+                </p>
+                <p class="description p-summary">
+                  This is the essay description, and the read more button will
+                  explore the full content.
+                </p>
+                <a class="read-more">Read More</a>
+              </div>
+            </article>
           </div>
-        </a>
+
+          <a href="./Essays/mainessaypage.html" class="number-card-link">
+            <div class="number-card">
+              <span class="number">2</span>
+              <span class="section-text">Essays</span>
+            </div>
+          </a>
+        </section>
+      </section>
+
+      <section id="portfolio-section">
+        <section class="content-section">
+          <a href="./Portfolio/mainportfoliopage.html" class="number-card-link">
+            <div class="number-card">
+              <span class="number">3</span>
+              <span class="section-text">Portfolio</span>
+            </div>
+          </a>
+          <div class="content-grid"></div>
+        </section>
+      </section>
+
+      <section id="design-section">
+        <section class="content-section">
+          <div class="content-grid">
+            <article class="content-card h-entry">
+              <img
+                class="content-image u-photo"
+                src="./Images/genric_card_background_image.png"
+                alt="Essay 1 image"
+              />
+              <div class="content-body">
+                <p class="description p-summary">
+                  Curious about the work behind my website? Explore my design
+                  process – where creativity meets strategy, and pixels find
+                  their purpose. See how it all comes together!
+                </p>
+                <a class="read-more">Read More</a>
+              </div>
+            </article>
+          </div>
+          <a href="./Design/maindesignpage.html" class="number-card-link">
+            <div class="number-card">
+              <span class="number">4</span>
+              <span class="section-text">Design Process</span>
+            </div>
+          </a>
+        </section>
+      </section>
+
+      <section id="contact-section">
+        <section class="content-section">
+          <a href="#" class="number-card-link">
+            <div class="number-card">
+              <span class="number">5</span>
+              <span class="section-text">Contact</span>
+            </div>
+          </a>
+          <div class="content-grid">
+            <div class="content-card contact-labels">
+              <p>Email</p>
+              <p>Phone</p>
+              <p>LinkedIn</p>
+              <p>Instagram</p>
+            </div>
+            <div class="content-card contact-info">
+              <p>
+                <a href="mailto:mrtomtman@gmail.com">mrtomtman@gmail.com</a>
+              </p>
+              <p><a href="tel:+1234567890">+1 234 567 890</a></p>
+              <p>
+                <a
+                  href="https://linkedin.com/in/yourprofile"
+                  target="_blank"
+                  rel="noopener"
+                  >linkedin.com/in/yourprofile</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://instagram.com/yourhandle"
+                  target="_blank"
+                  rel="noopener"
+                  >@yourhandle</a
+                >
+              </p>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
 
