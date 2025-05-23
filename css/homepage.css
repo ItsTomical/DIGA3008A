@@ -159,7 +159,26 @@ body {
   transform: translateX(-50%) translateY(0);
 }
 
+.static-card {
+  pointer-events: none;
+  transform: none;
+  box-shadow: none;
+  background-color: #e6dace;
+  cursor: default;
+  transition: none;
+}
 
+.static-card:hover {
+  transform: none;
+  box-shadow: none;
+  background-color: #e6dace;
+  color: inherit;
+}
+
+.static-card:hover .number,
+.static-card:hover .section-text {
+  color: inherit;
+}
 
 
 /* Grid Layout */
