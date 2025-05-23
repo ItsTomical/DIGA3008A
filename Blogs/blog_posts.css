@@ -141,22 +141,88 @@ ul {
 
 /* Back to Blogs Button */
 .back-to-blogs {
-    display: inline-block;
-    margin: 2rem 0 0 2rem;
-    padding: 0.5rem 1rem;
-    background-color: #3C415B;
-    color: white;
-    text-decoration: none;
-    font-family: Poppins, sans-serif;
-    border-radius: 8px;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 4px 8px rgba(141, 166, 155, 0.6);
-    max-width: fit-content;
-    margin: 2rem 0 0 2rem; 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0 0 2rem;
+  padding: 10px 16px;
+  background-color: #E6DACE;
+  color: #3c415b;            
+  text-decoration: none;
+  font-family: Poppins, sans-serif;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  max-width: fit-content;
 }
-  
+
 .back-to-blogs:hover {
-    background-color: #B75B47;
+  background-color: #B75B47;
+  transform: translateY(-2px);
 }
-  
+
+.back-to-blogs:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(162, 185, 170, 0.3);
+}
+
+.back-to-blogs:active {
+  transform: scale(0.97);
+}
+
+
+.Numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  padding: 20px 0;
+  font-family: Poppins, sans-serif;
+  flex-wrap: wrap;
+}
+
+.Numbers a {
+  text-decoration: none;
+  color: #3c415b;
+  background-color: #E6DACE;
+  padding: 10px 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  font-weight: 500;
+  min-width: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Numbers a:hover {
+  background-color: #b75b47;
+  transform: translateY(-2px);
+}
+
+.Numbers a.active {
+  background-color: #b75b47;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+}
+
+.Numbers a.prev-next {
+  font-weight: 600;
+}
+
+.Numbers a:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(183, 91, 71, 0.3); /* Match read-more */
+}
+
+.Numbers a:active {
+  transform: scale(0.97);
+}

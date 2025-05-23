@@ -1,4 +1,6 @@
-/* LIGHTBOX STYLES */
+/*-------------------------------------
+  LIGHTBOX OVERLAY
+-------------------------------------*/
 .lightbox {
   display: none;
   position: fixed;
@@ -28,6 +30,9 @@
   font-family: Poppins, sans-serif;
 }
 
+/*-------------------------------------
+  CLOSE BUTTON
+-------------------------------------*/
 .close {
   position: absolute;
   top: 30px;
@@ -41,4 +46,54 @@
 
 .close:hover {
   color: #bbb;
+}
+
+/*-------------------------------------
+  LIGHTBOX NAVIGATION ARROWS
+-------------------------------------*/
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  font-weight: bold;
+  color: #B75B47;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+  z-index: 1001;
+}
+
+.prev:hover,
+.next:hover {
+  color: #bbb;
+}
+
+.prev {
+  left: 30px;
+}
+
+.next {
+  right: 30px;
+}
+
+/*-------------------------------------
+  IMAGE THUMBNAIL HOVER EFFECT
+-------------------------------------*/
+.lightbox-target {
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    filter 0.4s ease;
+  cursor: zoom-in;
+}
+
+.lightbox-target:hover {
+  transform: translateY(-5px) scale(1.08) rotate(1.5deg);
+  box-shadow:
+    0 0 0 4px #B75B47,
+    0 10px 20px rgba(0, 0, 0, 0.2),
+    0 0 15px rgba(183, 91, 71, 0.4);
 }

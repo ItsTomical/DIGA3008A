@@ -55,10 +55,12 @@
 
     <main>
       <h1 class="heading">Portfolio</h1>
-      <h2 class="index-subheading">
-        Welcome to my creative playground! Dive into my world of digital art, 3D
-        renders, animations and traditional artworks. Ready to explore?
-      </h2>
+      <div class="index-subheading">
+        <h2>
+          Welcome to my creative playground! Dive into my world of digital art,
+          3D renders, animations and traditional artworks. Ready to explore?
+        </h2>
+      </div>
 
       <section class="portfolio-section">
         <h2 class="title">Photo Gallery</h2>
@@ -98,7 +100,11 @@
 
     <div id="lightbox" class="lightbox">
       <span class="close">&times;</span>
+      <span class="prev">&#10094;</span>
+      <!-- Left arrow -->
       <img class="lightbox-content" id="lightbox-img" />
+      <span class="next">&#10095;</span>
+      <!-- Right arrow -->
       <div id="caption"></div>
     </div>
   </body>
