@@ -1,0 +1,160 @@
+.heading {
+    text-align: center;
+    margin: 20px auto;
+    font-family: Poppins, sans-serif;
+    font-size: 36px;
+    padding-top: 70px;
+}
+
+/* Essay Summary Card */
+.essay-summary-card {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #e6dace;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(141, 166, 155, 0.6);
+}
+
+.summary-card-content {
+  text-align: center;
+}
+
+.essay-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #3c415b;
+  margin-bottom: 0.5rem;
+  font-family: Poppins, sans-serif;
+}
+
+.essay-date {
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.essay-description {
+  font-size: 1.1rem;
+  color: black;
+  line-height: 1.6;
+  font-family: Tinos, sans-serif;
+}
+
+/* Essay Article Card */
+.essay-article-card {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #e6dace;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  font-family: Tinos, sans-serif;
+}
+
+.essay-article-card h2 {
+  margin-top: 1.5rem;
+  color: #3c415b;
+  font-family: Poppins, sans-serif;
+  font-size: 1.4rem;
+}
+
+.essay-article-card h3 {
+  margin-top: 1.5rem;
+  color: #3c415b;
+  font-family: Poppins, sans-serif;
+  font-size: 1.4rem;
+}
+
+.essay-article-card h4 {
+  margin-top: 1.5rem;
+  color: #3c415b;
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+}
+
+.essay-article-card p,
+.essay-article-card ol {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: black;
+  margin-bottom: 1rem;
+  font-family: Tinos, sans-serif;
+}
+
+.essay-article-card img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* References (Cite) Style */
+.cite {
+  font-size: 1rem;
+  color: #3c415b;
+  font-style: Tinos, sans-serif;
+  line-height: 1.5;
+}
+
+.cite a {
+  color: #b75b47;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.cite a:hover {
+  color: #222;
+}
+
+/* List Style */
+ul {
+  list-style-type: square;
+  color: #b75b47;
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #b75b47;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: Poppins, sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Back to Essays Button */
+.back-to-essays {
+  display: inline-block;
+  margin: 2rem 0 0 2rem;
+  padding: 0.5rem 1rem;
+  background-color: #3C415B;
+  color: white;
+  text-decoration: none;
+  font-family: Poppins, sans-serif;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(141, 166, 155, 0.6);
+  max-width: fit-content;
+}
+
+.back-to-essays:hover {
+  background-color: #B75B47;
+}

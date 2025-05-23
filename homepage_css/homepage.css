@@ -24,7 +24,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* Generic Content Section */
 .content-section {
   display: flex;
   justify-content: flex-start;
@@ -32,6 +31,9 @@ body {
   gap: 40px;
   margin: 100px auto;
   max-width: 1200px;
+  min-height: 90vh;
+  padding-top: 50px;
+  box-sizing: border-box;
 }
 
 /* Components */
@@ -86,10 +88,14 @@ body {
 
 /* Content Cards */
 .number-card-link {
+  position: relative;
+  display: inline-block;
   text-decoration: none;
+  overflow: visible; /* Let the button overflow */
 }
 
 .number-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,6 +109,7 @@ body {
   text-align: center;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .number-card:hover {
@@ -125,6 +132,37 @@ body {
   font-family: Poppins, sans-serif;
 }
 
+.view-all-button {
+  position: absolute;
+  bottom: -10px; /* Appear just below the card */
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background-color: transparent;
+  color: black;
+  padding: 6px 16px;
+  border: 2px solid #b75b47;
+  border-radius: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+  font-weight: 500;
+}
+
+.number-card-link:hover .view-all-button {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+  background-color: #b75b47;
+  color: white;
+  transform: translateX(-50%) translateY(0);
+}
+
+
+
+
+/* Grid Layout */
 .content-grid {
   display: flex;
   flex-direction: row;
@@ -264,17 +302,14 @@ body {
   .content-grid {
     flex-direction: column;
   }
+
   .contact-labels,
   .contact-info {
     border-right: none;
     padding: 0;
     gap: 10px;
   }
-}
 
-
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
   .about-section {
     flex-direction: column;
     gap: 40px;
@@ -293,17 +328,7 @@ body {
     font-size: 18px;
   }
 
-  .content-grid {
-    flex-direction: column;
-  }
-
   .number-card {
     margin-bottom: 20px;
   }
-}
-
-.content-section {
-  min-height: 90vh;
-  padding-top: 50px; 
-  box-sizing: border-box;
 }
