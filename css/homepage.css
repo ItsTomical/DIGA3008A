@@ -6,10 +6,72 @@ body {
   background-color: #fff;
 }
 
+.wave-emoji {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.p-name:hover .wave-emoji {
+  animation: wave 1s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(14deg); }
+  30% { transform: rotate(-8deg); }
+  45% { transform: rotate(14deg); }
+  60% { transform: rotate(-4deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+.welcome-text {
+  text-align: center;
+  font-size: 16px;
+  color: #e6dace; /* soft tone that complements your palette */
+  margin: 0;
+  margin-top: 80px;
+  opacity: 0.8;
+  letter-spacing: 1px;
+}
+
+.name-highlight {
+  color: #b75b47;
+}
+
+
+
+.welcome-text {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 0.8; transform: translateY(0); }
+}
+
+.location {
+  font-size: 1rem;
+  color: #fff; /* Delft Blue */
+  margin-top: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.location i {
+  color: #B75B47; /* Jasper */
+}
+
+.page-heading {
+  text-align: center;
+}
+
+
 /* Page Heading */
 .page-heading h1 {
-  text-align: center;
-  margin-top: 100px;
   font-size: 45px;
   color: #ffffff;
 }
@@ -44,6 +106,7 @@ body {
   border-radius: 16px;
   box-shadow: 0 6px 16px rgba(141, 166, 155, 0.6);
   text-align: center;
+  margin-bottom: 0;
 }
 
 .card-text h2 {
@@ -61,7 +124,7 @@ body {
 }
 
 /* Profile */
-.floating-profile {
+/* .floating-profile {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,15 +139,8 @@ body {
   border: 3px solid #3c415b;
   background-color: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  transform: translate(10px, -110px) scale(1.1);
-}
-
-.profile-name {
-  font-size: 25px;
-  font-weight: bold;
-  color: #ffffff;
-  margin-top: -70px;
-}
+  transform: translate(10px, -50px) scale(1.1);
+} */
 
 /* Content Cards */
 .number-card-link {
@@ -225,7 +281,7 @@ body {
   margin: 0;
   color: #b75b47;
   font-weight: bold;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: 2rem;
   text-align: center;
   margin-bottom: 10px;
@@ -316,38 +372,193 @@ body {
   border-bottom: 1px solid #b75b47;
 }
 
-/* Make sure contact section stacks on smaller screens */
+/* ======= MOBILE STYLES ======= */
 @media screen and (max-width: 768px) {
-  .content-grid {
-    flex-direction: column;
-  }
-
-  .contact-labels,
-  .contact-info {
-    border-right: none;
-    padding: 0;
-    gap: 10px;
-  }
-
+  
+  /* About Section */
   .about-section {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 40px;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  /* Make image appear first */
+  .floating-profile {
+    order: 0;
+    transform: none;
+    align-items: center;
   }
 
   .about-card {
-    width: 90%;
+    order: 1;
+    width: calc(100vw - 40px); /* Match navbar width (body padding 20px each side) */
+    max-width: none; /* override previous max-width */
   }
 
   .profile-image {
     width: 140px;
     height: 140px;
+    transform: none;
   }
 
   .profile-name {
     font-size: 18px;
+    margin-top: 0;
   }
 
-  .number-card {
-    margin-bottom: 20px;
+  /* Content Section */
+  .content-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 0;
+    text-align: center;
   }
+
+  .content-section .number-card-link {
+    order: 1;
+    width: calc(100vw - 40px);
+    max-width: none;
+  }
+
+  .content-section .content-grid {
+    order: 2;
+    width: calc(100vw - 40px);
+    max-width: none;
+  }
+
+  .content-grid {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    align-items: center;
+  }
+
+  .content-card {
+    width: 100%;
+    border-right: none;
+    padding-right: 0;
+  }
+
+  /* Contact Section */
+  .contact-labels,
+  .contact-info {
+    flex-direction: column;
+    border-right: none;
+    padding: 0;
+    gap: 10px;
+  }
+
+  /* Number Card */
+  .number-card {
+    width: calc(100vw - 40px);
+    height: auto;
+    padding: 20px;
+  }
+
+  .number-card .number {
+    font-size: 60px;
+  }
+
+  .number-card .section-text {
+    font-size: 30px;
+  }
+}
+
+.floating-profile {
+  position: relative; /* Make container relative to position absolute children */
+  width: 300px; /* Match your image width */
+  height: 300px; /* Match your image height */
+  transform: translate(10px, -50px) scale(1.1); /* Keep your existing transform */
+}
+
+.floating-profile .profile-image {
+  position: absolute; /* Stack images exactly on top */
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3c415b;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.5s ease;
+}
+
+/* Show front image initially */
+.floating-profile .profile-image.back {
+  opacity: 0; /* Hide hover image */
+  pointer-events: none; /* Disable pointer events on hidden image */
+}
+
+/* On hover: hide front, show back */
+.floating-profile:hover .profile-image.front {
+  opacity: 0;
+}
+
+.floating-profile:hover .profile-image.back {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.skills-wrapper {
+  width: 700px;
+  max-width: 100%;
+  margin-left: 8rem;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  margin-top: -50px;
+  padding-left: 2rem;
+  box-sizing: border-box;
+}
+
+.skills-label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 20px;
+  white-space: nowrap;
+  font-family: Tinos sans-serif;
+}
+
+.skills-icons {
+  display: flex;
+  gap: 25px;
+  /* background-color: #e6dace; */
+  padding: 20px 35px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(183, 91, 71, 1);
+
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
+}
+
+.skill-icon {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.skill-name {
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+}
+
+.skill-icon:hover {
+  transform: scale(1.2);
 }
