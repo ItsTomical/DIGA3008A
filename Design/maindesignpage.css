@@ -47,8 +47,48 @@ body {
     border-radius: 16px;
     box-shadow: 0 6px 16px rgba(141, 166, 155, 0.6);
 }
-  
-/* Wireframe Section */
+
+/* Design diagrams Section */
+.design-diagrams {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.diagram {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  text-align: center;
+  max-width: 500px;
+  flex: 1 1 400px;
+}
+
+.diagram h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  color: #3C415B;
+  margin-bottom: 1rem;
+}
+
+.diagram img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.diagram .caption {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #7a7a7a;
+  margin-top: 1rem;
+}
+
+/* Wireframes Section */
 figure {
     text-align: center;
     margin-top: 30px;
@@ -73,7 +113,38 @@ figure {
   a:hover {
     color: #222222; 
 }
-  
+
+.wireframe-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.wireframe-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 220px;
+  text-align: center;
+}
+
+.wireframe-card h5 {
+  font-family: 'Poppins', sans-serif;
+  color: #3C415B;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.wireframe-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
 /* Back to Top Button */
 .back-to-top {
   position: fixed;
@@ -96,5 +167,3 @@ figure {
   opacity: 1;
   pointer-events: auto;
 }
-
-  

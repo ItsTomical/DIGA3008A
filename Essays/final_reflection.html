@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Thomas Yardley" />
+    <meta
+      name="description"
+      content="A reflection on the implementation of my portfolio website, discussing how UI and UX decisions influenced folder structure, semantic HTML, metadata, CSS, and JavaScript functionality."
+    />
+    <title>Final Reflection: Website Implementation</title>
+    <link rel="stylesheet" href="../normalize.css" />
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../Blogs/blog_posts.css" />
+    <script
+      src="https://kit.fontawesome.com/dddfa338de.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../javascript/back_to_top_button.js"></script>
+  </head>
+
+  <body>
+    <header id="navbar">
+      <div class="brand h-card">
+        <img
+          src="../Images/Logo name.png"
+          id="logo"
+          alt="Thomas Yardley's logo image"
+          class="logo"
+        />
+        <label class="page-header p-name">Thomas Yardley</label>
+      </div>
+
+      <div class="nav-container">
+        <nav>
+          <input type="checkbox" id="check" />
+          <label for="check" class="burger-button">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+
+          <ul class="nav_links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Blogs/mainblogpage.html">Blogs</a></li>
+            <li>
+              <a href="../Essays/mainessaypage.html" class="active">Essays</a>
+            </li>
+            <li><a href="../Portfolio/mainportfoliopage.html">Portfolio</a></li>
+            <li><a href="../Design/maindesignpage.html">Design</a></li>
+            <li><a href="../index.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="contact-container">
+        <a class="cta" href="../index.html#contact-section">
+          <button>Contact</button>
+        </a>
+      </div>
+    </header>
+
+    <a href="../Essays/mainessaypage.html" class="back-to-blogs"
+      >← Back to Essays</a
+    >
+
+    <h1 class="heading">Final Reflection</h1>
+    <main>
+      <section class="blog-summary-card">
+        <div class="summary-card-content">
+          <h2 class="blog-title">
+            Final Reflection on the Implementation of the Website
+          </h2>
+          <p class="blog-date">
+            <time datetime="2025-06-13" class="dt-published">13 June 2025</time>
+          </p>
+          <p class="blog-description">
+            A final reflection on the design and technical implementation of my
+            portfolio website. This post explores how my user interface (UI) and
+            user experience (UX) decisions influenced my folder structure,
+            semantic HTML, metadata, CSS styling, and JavaScript functionality.
+            It also covers challenges I faced with mobile responsiveness and
+            code organisation, and what I learned about building accessible and
+            maintainable websites.
+          </p>
+        </div>
+      </section>
+
+      <article class="blog-article-card">
+        <section>
+          <h2>Abstract</h2>
+          <p>
+            This reflection explores the design and development process of my
+            portfolio website, with a focus on how user interface (UI) and user
+            experience (UX) choices impacted the technical implementation. It
+            discusses how my folder structure, semantic HTML, CSS, and
+            JavaScript features evolved throughout the semester. It also covers
+            the challenges I faced, such as text styling and mobile
+            responsiveness, and the improvements I plan to make going forward.
+          </p>
+        </section>
+
+        <section>
+          <h2>Folder Structure</h2>
+          <h3>Hierarchical Organisation</h3>
+          <p>
+            My folder structure follows the layout of my website. Each main
+            section - such as blog posts, essays, animations, and galleries -
+            has its own folder. Assets like images, stylesheets, and scripts are
+            also separated into their own folders. This helped keep things
+            organised and made it easier to find and update files later.
+          </p>
+
+          <h3>Separation of Concerns</h3>
+          <p>
+            I separated HTML, CSS, and JavaScript into different files. This
+            made the project cleaner and easier to maintain:
+          </p>
+          <ul>
+            <li>HTML handles the content and structure</li>
+            <li>CSS takes care of styling and layout</li>
+            <li>JavaScript adds functionality and interactivity</li>
+          </ul>
+          <p>
+            At first, it was hard to get used to this structure, especially when
+            I was updating styles across pages. But in the long run, it made my
+            code more flexible and easier to debug.
+          </p>
+
+          <h3>Modularity and Naming</h3>
+          <p>
+            I used simple but meaningful class names like
+            <code>.content-card</code>, <code>.gallery-image</code>, and
+            <code>.lightbox</code>. I also reused layout classes and section
+            structures across different pages. This made it easier to scale the
+            site and keep styles consistent.
+          </p>
+        </section>
+
+        <section>
+          <h2>Semantic Markup</h2>
+          <h3>Structure and Meaning</h3>
+          <p>
+            I used semantic HTML elements like <code>&lt;header&gt;</code>,
+            <code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>, and
+            <code>&lt;article&gt;</code>
+            to clearly communicate the purpose of each section of content.
+          </p>
+
+          <h3>Expressing Content Clearly</h3>
+          <p>
+            Headings are arranged in a logical hierarchy. Lists, buttons, and
+            links are clearly labelled. This helps both users and screen readers
+            understand the layout and content.
+          </p>
+
+          <h3>Improving Accessibility</h3>
+          <p>Using semantic markup improved:</p>
+          <ul>
+            <li>Screen reader usability (clear reading order, headings)</li>
+            <li>Keyboard navigation (logical tab flow)</li>
+            <li>Search engine optimization (structured content)</li>
+            <li>
+              Mobile accessibility (better behaviour on assistive devices)
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Metadata</h2>
+          <h3>Browser Support and SEO</h3>
+          <p>
+            Each page includes metadata like the character set, page
+            description, and viewport settings for mobile responsiveness. This
+            helps browsers render the content properly and also improves
+            visibility on search engines.
+          </p>
+
+          <h3>Useful Metadata for Specific Content</h3>
+          <p>
+            Pages like essays or blog posts could be improved even further with
+            more detailed metadata, like publication dates or keywords. While I
+            didn’t include full structured data yet, it’s something I plan to
+            explore later for better SEO and content description.
+          </p>
+        </section>
+
+        <section>
+          <h2>CSS Styling</h2>
+          <h3>Style Consistency</h3>
+          <p>
+            One of the biggest challenges I faced was maintaining consistent
+            text styling. I found myself repeating the same font sizes, colours,
+            and spacing rules for headings and paragraphs across different
+            selectors. I now realise I could’ve created shared utility classes
+            or used CSS variables to keep things more consistent and
+            maintainable.
+          </p>
+
+          <h3>Visual Design and Effects</h3>
+          <p>Some custom CSS features include:</p>
+          <ul>
+            <li>
+              Profile photo hover: changes to the original image when hovered
+            </li>
+            <li>
+              Name hover: a waving emoji animates when you hover over my name
+            </li>
+            <li>
+              Blog carousel: scrolls one card at a time within a styled frame
+            </li>
+          </ul>
+
+          <h3>Mobile Responsiveness</h3>
+          <p>
+            The site is responsive thanks to Flexbox and media queries, but it’s
+            not exactly how I imagined it in my mobile wireframes. Some sections
+            feel squished or need better padding/margins on smaller screens. I’d
+            like to keep improving the mobile layout by refining breakpoints and
+            simplifying the structure.
+          </p>
+        </section>
+
+        <section>
+          <h2>JavaScript Functionality</h2>
+          <h3>Interactive Features</h3>
+          <p>
+            I used JavaScript to add functionality without relying on inline
+            code. Key features include:
+          </p>
+          <ul>
+            <li>Typed name animation on the homepage</li>
+            <li>Blog post carousel with navigation arrows</li>
+            <li>Image and video lightboxes in fullscreen modals</li>
+            <li>Keyboard support (ESC to close, arrow keys to navigate)</li>
+          </ul>
+
+          <h3>Writing Reusable Code</h3>
+          <p>
+            I avoided inline JavaScript and wrote all scripts in external files.
+            This kept the code clean and easier to reuse. For example, the modal
+            and carousel logic is used in multiple places across the site.
+          </p>
+
+          <h3>Async and Dynamic Elements</h3>
+          <p>
+            Even without APIs or form handlers, the site includes dynamic
+            behaviour such as:
+          </p>
+          <ul>
+            <li>Modals that load new content based on clicks</li>
+            <li>
+              Lightboxes that adapt based on how many media items are available
+            </li>
+            <li>Typing effect that animates over time</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Contact and Links</h2>
+          <p>
+            I chose not to include a custom contact form. Instead, I used a
+            simple and effective solution: a Contact Me button that links to my
+            email, Instagram, and other social platforms. This method doesn’t
+            require JavaScript or APIs and still gives visitors a clear way to
+            connect with me.
+          </p>
+        </section>
+
+        <section>
+          <h2>Challenges and Improvements</h2>
+          <ul>
+            <li>
+              <strong>Repeated CSS for text:</strong> I now realise I could’ve
+              used shared classes or CSS variables instead of repeating styles.
+            </li>
+            <li>
+              <strong>Mobile layout issues:</strong> My responsive design didn’t
+              fully match my mobile wireframes. I plan to simplify it and test
+              more on devices.
+            </li>
+            <li>
+              <strong>Learning better CSS structure:</strong> I’ve started
+              building a proper global style system instead of fixing things
+              case-by-case.
+            </li>
+            <li>
+              <strong>Code consistency:</strong> I’ve gotten better at writing
+              clean, reusable code and avoiding bad habits like overly specific
+              selectors.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Conclusion</h2>
+          <p>
+            Making this website helped me understand how UI and UX choices
+            affect every part of the code — from file structure and HTML to how
+            I write my JavaScript. I learned how important it is to separate
+            concerns, use semantic elements, and keep styles consistent. Even
+            though I faced challenges with text styles and responsive design, I
+            now have a solid foundation I can build on. I’m proud of the result
+            and excited to keep improving the site as I grow as a developer and
+            designer.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <a href="#" class="back-to-top">Back to Top</a>
+
+    <footer>
+      <div class="footer-content">
+        © 2025 <span class="p-name">Thomas Yardley</span> | All rights reserved
+      </div>
+    </footer>
+  </body>
+</html>
