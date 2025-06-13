@@ -248,6 +248,7 @@ body {
   border-radius: 16px;
   box-shadow: 0 6px 16px rgba(141, 166, 155, 0.6);
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .content-card {

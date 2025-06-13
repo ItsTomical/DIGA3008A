@@ -15,6 +15,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="../javascript/lightbox.js"></script>
+    <script src="../javascript/animation_modal.js"></script>
   </head>
   <body>
     <header id="navbar">
@@ -59,41 +60,142 @@
 
     <main>
       <div class="heading"><h1>Portfolio</h1></div>
-      <div class="index-subheading">
+      <div class="index-subheading portfolio-subheading">
         <h2>
           Welcome to my creative playground! Dive into my world of digital art,
           3D renders, animations and traditional artworks. Ready to explore?
         </h2>
       </div>
 
-      <section class="portfolio-section">
-        <h2 class="title">Photo Gallery</h2>
+      <!-- Artworks Section -->
+      <section class="portfolio-section" id="artworks">
+        <h2 class="title">Artworks</h2>
         <div class="container">
           <div class="image-container">
             <img
-              src="../Images/artwork01.png"
+              src="../Images/Portfolio/artwork01.png"
               alt="An ink drawing showing the side-back view of a man covered in tattoos"
               class="lightbox-target"
             />
             <img
-              src="../Images/artwork02.png"
+              src="../Images/Portfolio/artwork02.png"
               alt="Nature versus nurture: A multimedia image where a hand controls a figure who merges into a gene-type tree"
               class="lightbox-target"
             />
             <img
-              src="../Images/artwork03.png"
+              src="../Images/Portfolio/artwork03.png"
               alt="A digitally drawn image of a robot floating above a platform in space"
               class="lightbox-target"
             />
             <img
-              src="../Images/artwork04.png"
+              src="../Images/Portfolio/artwork04.png"
               alt="An ink image of a woman scratching the back of her head"
               class="lightbox-target"
             />
-            <!-- <img src="../Images/artwork05.png" alt="" /> -->
           </div>
         </div>
       </section>
+
+      <!-- Games Section -->
+      <section class="portfolio-section" id="games">
+        <h2 class="title">Games</h2>
+        <div class="container">
+          <div class="game-card-grid">
+            <article class="game-card">
+              <img
+                src="../Images/Portfolio/pizza_eats_game.png"
+                alt="Pizza Eats Game thumbnail"
+              />
+              <h3>Pizza Eats Game</h3>
+              <p>
+                Outsmart the dice, outdeliver your rival. In this clever 2D
+                roll-and-write game, your success depends on how you play the
+                hand—or rather, the dice—you’re dealt. Each turn, three numbers
+                shape your strategy as you customize toppings, select pizza
+                slices, and navigate a lively neighborhood to complete
+                deliveries. It’s a fast-paced race to serve every house before
+                your opponent, but with luck and logic constantly colliding, no
+                two rounds are ever the same. Can you stay one step ahead and
+                deliver the final slice?
+              </p>
+              <a
+                href="https://jessica-jardim.itch.io/pizza-eats-game"
+                target="_blank"
+                class="game-link"
+                >Play on Itch.io</a
+              >
+            </article>
+
+            <article class="game-card">
+              <img
+                src="../Images/Portfolio/air_hockey.png"
+                alt="Air Hockey Game thumbnail"
+              />
+              <h3>Air Hockey</h3>
+              <p>
+                This classic air hockey game pits you against an AI opponent in
+                a fast-paced digital match — but with a unique twist: randomly
+                spawning portals on the board add chaos and strategy to every
+                rally. Built as part of a physics-focused assignment, the game
+                incorporates real-world collision logic using Unity’s 2D physics
+                system.
+              </p>
+              <a
+                href="https://itstomical.itch.io/physics-assignment-air-hockey"
+                target="_blank"
+                class="game-link"
+                >Play on Itch.io</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3D Assets Section -->
+      <!-- <section class="portfolio-section" id="assets">
+        <h2 class="title">3D Assets</h2>
+        <div class="container">
+          <p>Showcase of 3D models and assets used in games and animations.</p>
+        </div>
+      </section> -->
+
+      <!-- Animations Section -->
+      <section class="portfolio-section" id="animations">
+        <h2 class="title">Animations</h2>
+        <div class="container">
+          <div class="video-gallery">
+            <video
+              class="video-thumb"
+              src="../Videos/Assignment 1 Take Animation (1).mp4"
+              muted
+            ></video>
+            <video
+              class="video-thumb"
+              src="../Videos/Character Turnaround Assignment 2.mp4"
+              muted
+            ></video>
+            <video
+              class="video-thumb"
+              src="../Videos/Orthographic Walk Cycle (1).mp4"
+              muted
+            ></video>
+            <video
+              class="video-thumb"
+              src="../Videos/June Exam Animation 3A.mp4"
+              muted
+            ></video>
+            <!-- Add more <video> tags here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Video Modal -->
+      <div id="video-modal" class="video-modal">
+        <span class="video-close">&times;</span>
+        <span class="video-prev">&#10094;</span>
+        <video id="modal-video" controls autoplay></video>
+        <span class="video-next">&#10095;</span>
+      </div>
     </main>
 
     <footer>

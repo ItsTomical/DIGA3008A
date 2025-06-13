@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
     <script
       src="https://kit.fontawesome.com/dddfa338de.js"
       crossorigin="anonymous"
@@ -19,6 +20,7 @@
     <script src="javascript/homepage.js"></script>
     <script src="javascript/type_out_name.js"></script>
     <script src="javascript/profile_flip.js"></script>
+    <script src="javascript/carousel.js"></script>
   </head>
 
   <body class="h-feed">
@@ -177,57 +179,346 @@
           </a>
 
           <div class="content-grid">
-            <article class="content-card h-entry">
-              <h2 class="content-label">Blog 1</h2>
-              <img
-                class="content-image u-photo"
-                src="./Images/genric_card_background_image.png"
-                alt="Blog 1 image"
-              />
-              <div class="content-body">
-                <h3 class="content-title p-name">
-                  Exploring the Web: From Memex to My First GitHub Page
-                </h3>
-                <p class="date">
-                  <time class="dt-published" datetime="2025-02-17"
-                    >17 February 2025</time
-                  >
-                </p>
-                <p class="description p-summary">
-                  A personal reflection on learning to publish a website with
-                  GitHub Pages, exploring the early visions of the internet by
-                  Vannevar Bush, and tracing the web’s transformation from
-                  text-heavy systems to the dynamic platform we know today.
-                </p>
-                <a class="read-more" href="./Blogs/blog01.html">Read More</a>
-              </div>
-            </article>
+            <div class="blog-carousel-wrapper">
+              <button class="carousel-btn prev">‹</button>
 
-            <article class="content-card h-entry">
-              <h2 class="content-label">Blog 2</h2>
-              <img
-                class="content-image u-photo"
-                src="./Images/genric_card_background_image.png"
-                alt="Blog 2 image"
-              />
-              <div class="content-body">
-                <h3 class="content-title p-name">
-                  Hypertext, Power, and the Internet We Have Today
-                </h3>
-                <p class="date">
-                  <time class="dt-published" datetime="2025-02-24"
-                    >24 February 2025</time
-                  >
-                </p>
-                <p class="description p-summary">
-                  A reflection on Moulthrop’s and Nelson’s visions of a free,
-                  open internet — and how today’s web, shaped by algorithms,
-                  corporations, and governments, challenges the dream of true
-                  digital literacy and user control.
-                </p>
-                <a class="read-more" href="./Blogs/blog02.html">Read More</a>
+              <div class="carousel-track-container">
+                <div class="carousel-track">
+                  <!-- Blog 1 -->
+                  <article class="content-card h-entry">
+                    <h2 class="content-label">Blog 1</h2>
+                    <img
+                      class="content-image u-photo"
+                      src="./Images/Blogs/blog01.png"
+                      alt="Blog 1 image"
+                    />
+                    <div class="content-body">
+                      <h3 class="content-title p-name">
+                        Exploring the Web: From Memex to My First GitHub Page
+                      </h3>
+                      <p class="date">
+                        <time class="dt-published" datetime="2025-02-17"
+                          >17 February 2025</time
+                        >
+                      </p>
+                      <p class="description p-summary">
+                        A personal reflection on learning to publish a website
+                        with GitHub Pages, exploring the early visions of the
+                        internet by Vannevar Bush, and tracing the web’s
+                        transformation from text-heavy systems to the dynamic
+                        platform we know today.
+                      </p>
+                      <a class="read-more" href="./Blogs/blog01.html"
+                        >Read More</a
+                      >
+                    </div>
+                  </article>
+
+                  <!-- Blog 2 -->
+                  <article class="content-card h-entry">
+                    <h2 class="content-label">Blog 2</h2>
+                    <img
+                      class="content-image u-photo"
+                      src="./Images/Blogs/blog02.png"
+                      alt="Blog 2 image"
+                    />
+                    <div class="content-body">
+                      <h3 class="content-title p-name">
+                        Blogging with Style: CSS Grids & Personal Layouts
+                      </h3>
+                      <p class="date">
+                        <time class="dt-published" datetime="2025-03-10"
+                          >10 March 2025</time
+                        >
+                      </p>
+                      <p class="description p-summary">
+                        A dive into CSS Grid to create responsive, aesthetically
+                        pleasing blog layouts. I explore how to balance
+                        structure with visual interest and make blog cards stand
+                        out while staying accessible and responsive.
+                      </p>
+                      <a class="read-more" href="./Blogs/blog02.html"
+                        >Read More</a
+                      >
+                    </div>
+                  </article>
+
+                  <!-- Blog 3 -->
+                  <article class="content-card h-entry">
+                    <h2 class="content-label">Blog 3</h2>
+                    <img
+                      class="content-image u-photo"
+                      src="./Images/Blogs/blog03.png"
+                      alt="Blog 3 image"
+                    />
+                    <div class="content-body">
+                      <h3 class="content-title p-name">
+                        Behind the Scenes: Semantic HTML & Microformats
+                      </h3>
+                      <p class="date">
+                        <time class="dt-published" datetime="2025-04-21"
+                          >21 April 2025</time
+                        >
+                      </p>
+                      <p class="description p-summary">
+                        This post explores how semantic HTML and microformats
+                        improve accessibility, SEO, and interoperability across
+                        platforms—plus how I structured my own blog entries to
+                        follow these practices.
+                      </p>
+                      <a class="read-more" href="./Blogs/blog03.html"
+                        >Read More</a
+                      >
+                    </div>
+                  </article>
+
+                  <!-- Blog 4 -->
+                  <article class="content-card h-entry">
+                    <h2 class="content-label">Blog 4</h2>
+                    <img
+                      class="content-image u-photo"
+                      src="../Images/genric_card_background_image.png"
+                      alt="Blog 4 image"
+                    />
+                    <div class="content-body">
+                      <h3 class="content-title p-name">
+                        Designing with Purpose: Aligning Goals, Users, and
+                        Interface Elements
+                      </h3>
+                      <p class="date">
+                        <time class="dt-published" datetime="2025-03-10"
+                          >10 March 2025</time
+                        >
+                      </p>
+                      <p class="description p-summary">
+                        In this post, I outline the goals of my personal
+                        website, explore different user types and their needs,
+                        and explain how interface elements, information
+                        structure, and visual design choices support a smooth
+                        and engaging user experience.
+                      </p>
+                      <a class="read-more u-url" href="./Blogs/blog04.html"
+                        >Read More</a
+                      >
+                    </div>
+                  </article>
+
+                  <!-- Blog 7 -->
+                  <article class="content-card h-entry">
+                    <h2 class="content-label">Blog 7</h2>
+                    <img
+                      class="content-image u-photo"
+                      src="../Images/genric_card_background_image.png"
+                      alt="Blog 4 image"
+                    />
+                    <div class="content-body">
+                      <h3 class="content-title p-name">
+                        An Analysis of South African Websites
+                      </h3>
+                      <p class="date">
+                        <time class="dt-published" datetime="2025-03-10"
+                          >31 March 2025</time
+                        >
+                      </p>
+                      <p class="description p-summary">
+                        In this post, I analyse three South African
+                        websites—SANParks, Epic Lion, and Cape Town Tourism— by
+                        assessing their user interface (UI) and user experience
+                        (UX). Each site is explored through its strengths and
+                        weaknesses, highlighting key elements that contribute to
+                        or detract from the overall user journey.
+                      </p>
+                      <a class="read-more u-url" href="./Blogs/blog07.html"
+                        >Read More</a
+                      >
+                    </div>
+                  </article>
+
+                  <!-- Blog 9 -->
+                  <article class="content-card h-entry">
+                    <h2 class="content-label">Blog 9</h2>
+                    <img
+                      class="content-image u-photo"
+                      src="../Images/genric_card_background_image.png"
+                      alt="Blog 4 image"
+                    />
+                    <div class="content-body">
+                      <h3 class="content-title p-name">
+                        Design Justice, Digital Access, and Ethical Tech
+                      </h3>
+                      <p class="date">
+                        <time class="dt-published" datetime="2025-03-10"
+                          >21 April 2025</time
+                        >
+                      </p>
+                      <p class="description p-summary">
+                        A critical response to Daniolou, Costanza-Chock, and
+                        Cantrill that argues internet access is a basic
+                        right—and that ethical, inclusive design must centre the
+                        voices of those most affected by digital exclusion.
+                      </p>
+                      <a class="read-more u-url" href="./Blogs/blog09.html"
+                        >Read More</a
+                      >
+                    </div>
+                  </article>
+
+                  <!-- Blog 10 -->
+                  <article class="content-card h-entry">
+                    <h2 class="content-label">Blog 10</h2>
+                    <img
+                      class="content-image u-photo"
+                      src="../Images/genric_card_background_image.png"
+                      alt="Blog 4 image"
+                    />
+                    <div class="content-body">
+                      <h3 class="content-title p-name">
+                        Geography and the Internet: Who Really Benefits?
+                      </h3>
+                      <p class="date">
+                        <time class="dt-published" datetime="2025-03-10"
+                          >29 April 2025</time
+                        >
+                      </p>
+                      <p class="description p-summary">
+                        A close reading of Greenstein et al. (2018) reveals how
+                        the internet hasn’t erased geography but often
+                        reinforces it. This blog explores digital inequalities,
+                        infrastructure, and the myth of a borderless web.
+                      </p>
+                      <a class="read-more u-url" href="./Blogs/blog10.html"
+                        >Read More</a
+                      >
+                    </div>
+                  </article>
+
+                  <!-- Blog 11 -->
+                  <article class="content-card h-entry">
+                    <h2 class="content-label">Blog 11</h2>
+                    <img
+                      class="content-image u-photo"
+                      src="../Images/genric_card_background_image.png"
+                      alt="Blog 4 image"
+                    />
+                    <div class="content-body">
+                      <h3 class="content-title p-name">
+                        Understanding Digital Inequality
+                      </h3>
+                      <p class="date">
+                        <time class="dt-published" datetime="2025-03-10"
+                          >5 May 2025</time
+                        >
+                      </p>
+                      <p class="description p-summary">
+                        A reflection on Robinson et al.’s argument that digital
+                        inequality isn’t just about access, but also about
+                        confidence, capability, and the broader social forces
+                        that shape who benefits from being online — and who gets
+                        left behind.
+                      </p>
+                      <a class="read-more u-url" href="./Blogs/blog11.html"
+                        >Read More</a
+                      >
+                    </div>
+                  </article>
+
+                  <!-- Blog 12 -->
+                  <article class="content-card h-entry">
+                    <h2 class="content-label">Blog 12</h2>
+                    <img
+                      class="content-image u-photo"
+                      src="../Images/genric_card_background_image.png"
+                      alt="Blog 4 image"
+                    />
+                    <div class="content-body">
+                      <h3 class="content-title p-name">
+                        Decolonial Code: Ethical Design in a Connected World
+                      </h3>
+                      <p class="date">
+                        <time class="dt-published" datetime="2025-03-10"
+                          >12 May 2025</time
+                        >
+                      </p>
+                      <p class="description p-summary">
+                        A reflection on how JavaScript-enhanced features can
+                        improve usability— but may also reinforce digital
+                        inequality. Drawing on Mohamed et al. (2020) and Verdi
+                        (2020), this post explores how seemingly neutral design
+                        choices carry ethical weight in the context of
+                        decolonialism.
+                      </p>
+                      <a class="read-more u-url" href="./Blogs/blog12.html"
+                        >Read More</a
+                      >
+                    </div>
+                  </article>
+
+                  <!-- Blog 13 -->
+                  <article class="content-card h-entry">
+                    <h2 class="content-label">Blog 13</h2>
+                    <img
+                      class="content-image u-photo"
+                      src="../Images/genric_card_background_image.png"
+                      alt="Blog 4 image"
+                    />
+                    <div class="content-body">
+                      <h3 class="content-title p-name">
+                        What Would an Ethical Internet Look Like?
+                      </h3>
+                      <p class="date">
+                        <time class="dt-published" datetime="2025-03-10"
+                          >19 May 2025</time
+                        >
+                      </p>
+                      <p class="description p-summary">
+                        A personal reflection on free speech, access, privacy,
+                        and online respect. Drawing from thinkers like
+                        Papacharissi, Floridi, and Silverstone, this post
+                        explores what it means to build an internet that’s fair,
+                        inclusive, and ethically grounded.ces support a smooth
+                        and engaging user experience.
+                      </p>
+                      <a class="read-more u-url" href="./Blogs/blog13.html"
+                        >Read More</a
+                      >
+                    </div>
+                  </article>
+
+                  <!-- Blog 14 -->
+                  <article class="content-card h-entry">
+                    <h2 class="content-label">Blog 14</h2>
+                    <img
+                      class="content-image u-photo"
+                      src="../Images/genric_card_background_image.png"
+                      alt="Blog 4 image"
+                    />
+                    <div class="content-body">
+                      <h3 class="content-title p-name">
+                        Justice, Ethics, and How I Want to Build Things
+                        Differently
+                      </h3>
+                      <p class="date">
+                        <time class="dt-published" datetime="2025-03-10"
+                          >26 May 2025</time
+                        >
+                      </p>
+                      <p class="description p-summary">
+                        Reflecting on the Values at Play framework, this post
+                        explores how I want to build ethical, inclusive, and
+                        justice-oriented systems—whether in code or creativity.
+                        It’s about asking hard questions, designing with
+                        intention, and listening deeply to those impacted.
+                      </p>
+                      <a class="read-more u-url" href="./Blogs/blog14.html"
+                        >Read More</a
+                      >
+                    </div>
+                  </article>
+                </div>
               </div>
-            </article>
+
+              <button class="carousel-btn next">›</button>
+            </div>
           </div>
         </section>
       </section>
@@ -239,7 +530,7 @@
               <h2 class="content-label">Essay 1</h2>
               <img
                 class="content-image u-photo"
-                src="./Images/genric_card_background_image.png"
+                src="./Images/sanparks_website.png"
                 alt="UI and UX Analysis of the SANParks Website"
               />
               <div class="content-body">
@@ -345,7 +636,7 @@
                   </article>
 
                   <!-- 3D Assets Card -->
-                  <article class="content-card h-entry">
+                  <!-- <article class="content-card h-entry">
                     <img
                       class="content-image u-photo"
                       src="./Images/genric_card_background_image.png"
@@ -354,7 +645,7 @@
                     <div class="content-body">
                       <a class="read-more">3D Assets</a>
                     </div>
-                  </article>
+                  </article> -->
 
                   <!-- Animations Card -->
                   <article class="content-card h-entry">
